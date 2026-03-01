@@ -1,5 +1,9 @@
 # retailflow
 
+<!-- BADGES:START -->
+[![demo](https://img.shields.io/badge/-demo-blue?style=flat-square)](https://github.com/topics/demo) [![website](https://img.shields.io/badge/-website-2196f3?style=flat-square)](https://github.com/topics/website) [![css](https://img.shields.io/badge/-css-1572b6?style=flat-square)](https://github.com/topics/css) [![ecommerce](https://img.shields.io/badge/-ecommerce-blue?style=flat-square)](https://github.com/topics/ecommerce) [![frontend](https://img.shields.io/badge/-frontend-blue?style=flat-square)](https://github.com/topics/frontend) [![html](https://img.shields.io/badge/-html-e34f26?style=flat-square)](https://github.com/topics/html) [![multi-page](https://img.shields.io/badge/-multi--page-blue?style=flat-square)](https://github.com/topics/multi-page) [![responsive-design](https://img.shields.io/badge/-responsive--design-blue?style=flat-square)](https://github.com/topics/responsive-design) [![retail](https://img.shields.io/badge/-retail-blue?style=flat-square)](https://github.com/topics/retail) [![user-interface](https://img.shields.io/badge/-user--interface-blue?style=flat-square)](https://github.com/topics/user-interface)
+<!-- BADGES:END -->
+
 A demonstration retail website showcasing modern e-commerce functionality and user interface design patterns. Built with HTML and CSS, this project illustrates best practices for retail web development including responsive design, navigation patterns, and multi-page architecture.
 
 ## Overview
