@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: .
+  render:
+    - chatbots/
+
+website:
+  title: "RetailFlow"
+  navbar:
+    background: "#2563eb"
+    foreground: "#FFFFFF"
+    left:
+      - text: Home
+        href: index.html
+      - text: Shop
+        href: shop.html
+      - text: Support
+        href: customer-service.html
+      - text: About
+        href: about.html
+      - text: Staff
+        href: staff.html
+      - text: Leadership Chat
+        href: chatbots/index.html
+      - text: Internal
+        href: internal.html
+
+format:
+  html:
+    theme: cosmo
+    css: chatbots/styles.css
+    toc: true

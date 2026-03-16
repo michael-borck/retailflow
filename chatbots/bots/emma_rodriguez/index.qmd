@@ -1,0 +1,35 @@
+---
+title: "Emma Rodriguez"
+subtitle: "Chief Executive Officer"
+image: "image.webp"
+order: 1
+about:
+  template: solana
+  image-shape: round
+---
+
+## About Emma
+
+Emma Rodriguez is CEO of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.
+
+Emma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness.
+
+## Strategic Focus
+
+- Digital transformation and AI adoption
+- Competitive positioning against online retailers
+- Board expectations and investor relations
+- Balancing speed with bringing people along
+
+## Chat with Emma
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-note}
+Emma can discuss strategic direction, board pressures, and transformation priorities. For financial details, she may refer you to David Chen. For operational concerns, she may suggest Sarah Thompson.
+:::

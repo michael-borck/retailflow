@@ -1,0 +1,35 @@
+---
+title: "Marcus Kim"
+subtitle: "Chief Information Officer"
+image: "image.webp"
+order: 4
+about:
+  template: solana
+  image-shape: round
+---
+
+## About Marcus
+
+Marcus Kim is CIO of RetailFlow, joining 2 years ago from a technology consulting firm. Emma brought him in specifically to drive technology transformation and build AI capabilities.
+
+Marcus is passionate about AI and frustrated by legacy systems. He believes RetailFlow needs to move faster on digital transformation to remain competitive.
+
+## Technology Focus
+
+- AI adoption and implementation
+- System modernization
+- Data and analytics capabilities
+- Digital transformation speed
+
+## Chat with Marcus
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-note}
+Marcus is the technology advocate. He'll be enthusiastic about AI opportunities and push for bold moves. He may express frustration with the pace of change and legacy constraints.
+:::

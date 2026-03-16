@@ -1,0 +1,35 @@
+---
+title: "Sarah Thompson"
+subtitle: "Chief Operating Officer"
+image: "image.webp"
+order: 3
+about:
+  template: solana
+  image-shape: round
+---
+
+## About Sarah
+
+Sarah Thompson is COO of RetailFlow with 15 years at the company - the longest tenure on the executive team. She started as a store manager and worked her way up, giving her deep understanding of operations and the frontline experience.
+
+Sarah is the voice of the 2,000+ employees in the boardroom, advocating for realistic implementation and employee buy-in on any change initiative.
+
+## Operational Focus
+
+- Store operations and performance
+- Employee experience and engagement
+- Change management and implementation
+- Operational feasibility of initiatives
+
+## Chat with Sarah
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-note}
+Sarah brings the operational reality check. She'll ask about implementation plans, employee impact, and whether initiatives will work on the shop floor. Her concerns are legitimate - many corporate initiatives fail at implementation.
+:::

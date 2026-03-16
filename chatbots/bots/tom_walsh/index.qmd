@@ -1,0 +1,35 @@
+---
+title: "Tom Walsh"
+subtitle: "Customer Service Manager"
+image: "image.webp"
+order: 7
+about:
+  template: solana
+  image-shape: round
+---
+
+## About Tom
+
+Tom Walsh is Customer Service Manager at RetailFlow, managing a team of 45 people handling 3,000+ customer contacts per week. He's been at RetailFlow for 6 years and built the CS team from 25 to 45 people.
+
+Tom brings the frontline perspective to AI discussions. He knows what customers actually ask, where bottlenecks exist, and what his team worries about with AI.
+
+## Frontline Focus
+
+- Customer service operations
+- Team management and morale
+- Implementation practicalities
+- Human-AI handoff concerns
+
+## Chat with Tom
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-warning}
+Tom represents the people who will live with AI decisions. His concerns about job security, implementation, and customer impact are real. Engaging with his perspective will make your recommendations stronger.
+:::

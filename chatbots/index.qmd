@@ -1,0 +1,24 @@
+---
+title: "Leadership Team"
+subtitle: "Chat with RetailFlow's Executive Team"
+listing:
+  contents: bots
+  type: grid
+  categories: false
+  sort: "order"
+  fields: [image, title, subtitle]
+---
+
+Engage with RetailFlow's leadership team to understand their perspectives on AI transformation, digital strategy, and business operations.
+
+Each executive brings different priorities, concerns, and expertise. Use these conversations to:
+
+- **Explore stakeholder perspectives** on AI initiatives
+- **Practice executive communication** before key meetings
+- **Understand tensions** between growth, cost, operations, and innovation
+- **Test your recommendations** against different viewpoints
+
+::: {.callout-note}
+## For Executive Education Participants
+These chatbots are designed to support your learning in AI Leadership and Business Innovation courses. The executives reflect realistic tensions found in organisations undergoing digital transformation.
+:::

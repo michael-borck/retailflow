@@ -1,0 +1,57 @@
+/* RetailFlow Chatbots Styling */
+:root {
+  --rf-primary: #2563eb;
+  --rf-primary-dark: #1e40af;
+  --rf-secondary: #10b981;
+  --rf-accent: #f59e0b;
+  --rf-dark: #1f2937;
+  --rf-light: #f3f4f6;
+}
+
+.navbar {
+  background-color: var(--rf-primary) !important;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  color: var(--rf-dark);
+}
+
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+/* Team grid styling */
+.quarto-listing-default .listing-image {
+  border-radius: 50%;
+}
+
+/* Callout styling */
+.callout-note {
+  border-left-color: var(--rf-primary);
+}
+
+.callout-warning {
+  border-left-color: var(--rf-accent);
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: var(--rf-primary);
+  border-color: var(--rf-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--rf-primary-dark);
+  border-color: var(--rf-primary-dark);
+}

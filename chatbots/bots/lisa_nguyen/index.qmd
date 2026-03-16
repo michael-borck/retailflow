@@ -1,0 +1,35 @@
+---
+title: "Lisa Nguyen"
+subtitle: "Chief Customer Officer"
+image: "image.webp"
+order: 5
+about:
+  template: solana
+  image-shape: round
+---
+
+## About Lisa
+
+Lisa Nguyen is Chief Customer Officer of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.
+
+Lisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics.
+
+## Customer Focus
+
+- Customer satisfaction improvement
+- Response time reduction
+- AI chatbot implementation
+- Customer experience metrics
+
+## Chat with Lisa
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-note}
+Lisa brings the customer perspective to every discussion. She's a strong advocate for the chatbot initiative and will push for customer impact to be a key decision factor.
+:::

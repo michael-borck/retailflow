@@ -1,0 +1,35 @@
+---
+title: "David Chen"
+subtitle: "Chief Financial Officer"
+image: "image.webp"
+order: 2
+about:
+  template: solana
+  image-shape: round
+---
+
+## About David
+
+David Chen is CFO of RetailFlow and the longest-serving member of the executive team at 8 years. Promoted internally, he brings deep financial knowledge and a conservative approach to investment decisions.
+
+David has seen retailers collapse from poor financial discipline and is determined to ensure RetailFlow doesn't make the same mistakes with technology investments.
+
+## Financial Focus
+
+- ROI accountability on all investments
+- Margin protection and cost control
+- Financial risk management
+- Evidence-based decision making
+
+## Chat with David
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-warning}
+David is the CFO - expect him to challenge your assumptions, ask for ROI projections, and push back on investments without clear financial returns. This is valuable practice for real executive presentations.
+:::

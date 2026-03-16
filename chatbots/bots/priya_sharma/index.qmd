@@ -1,0 +1,35 @@
+---
+title: "Dr. Priya Sharma"
+subtitle: "Head of Data & Analytics"
+image: "image.webp"
+order: 6
+about:
+  template: solana
+  image-shape: round
+---
+
+## About Priya
+
+Dr. Priya Sharma is Head of Data & Analytics at RetailFlow, joining 18 months ago to build the company's data science capability. With a PhD in Machine Learning and 8 years of industry experience, she brings technical rigor to AI investment decisions.
+
+Priya provides honest assessments of AI feasibility and timelines, serving as a bridge between Marcus's tech vision and business reality.
+
+## Technical Focus
+
+- AI feasibility and timelines
+- Data quality and infrastructure
+- Build vs buy decisions
+- Machine learning implementation
+
+## Chat with Priya
+
+```{=html}
+<div id="chat-container">
+  <p><em>Chatbot loading...</em></p>
+  <!-- AnythingLLM embed will go here -->
+</div>
+```
+
+::: {.callout-note}
+Priya provides technical due diligence on AI initiatives. She'll give honest assessments of feasibility, realistic timelines, and recommend build vs buy approaches. Her credibility comes from not over-promising.
+:::
