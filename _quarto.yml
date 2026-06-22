@@ -18,9 +18,7 @@ website:
         href: customer-service.html
       - text: About
         href: about.html
-      - text: Staff
-        href: staff.html
-      - text: Leadership Chat
+      - text: Meet the Team
         href: chatbots/index.html
       - text: Internal
         href: internal.html
