@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Replenishment Policy | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Stock Replenishment Policy &amp; Process</h1>
+      <p class="meta-line">Operations Policy · Office of the COO · Rev 7, 6 January 2026</p>
+      <span class="doc-tag">Initiative: Inventory Optimisation</span>
+      <span class="doc-tag">Owner: S. Thompson</span>
+    </div>
+
+    <div class="doc-body">
+      <p>This policy describes how RetailFlow currently replenishes store stock. It is the baseline process the Inventory Optimisation Initiative is intended to modernise.</p>
+
+      <h2>1. Reorder points (manual, store-driven)</h2>
+      <p>Each store manager sets and maintains reorder points for the lines in their store, based on judgement and local knowledge. When on-hand stock for a SKU falls to or below its reorder point, the manager raises a replenishment request in StockTrak. There is no central, automated trigger.</p>
+      <ul>
+        <li>Reorder points are reviewed by managers "as needed" — in practice, irregularly.</li>
+        <li>No systematic adjustment for seasonality, promotions, or local trends beyond the manager's memory.</li>
+        <li>Estimated <strong>6 hours per week</strong> per store manager spent on reordering admin.</li>
+      </ul>
+
+      <h2>2. Seasonal buys (central)</h2>
+      <p>The buying team places seasonal bulk orders twice yearly (Autumn/Winter and Spring/Summer) against category forecasts built largely in spreadsheets. These commitments are made months ahead and are difficult to correct once placed, which drives much of our end-of-season markdown.</p>
+
+      <h2>3. Inter-store transfers</h2>
+      <p>Where one store is short and another is long on the same SKU, managers may arrange a transfer. This is ad hoc, relies on managers spotting the imbalance, and is under-used.</p>
+
+      <table>
+        <tr><th>Step</th><th>Owner</th><th>Cadence</th></tr>
+        <tr><td>Set / review reorder points</td><td>Store manager</td><td>Ad hoc</td></tr>
+        <tr><td>Raise replenishment request</td><td>Store manager</td><td>As triggered</td></tr>
+        <tr><td>Approve &amp; fulfil from DC</td><td>Warehouse / supply</td><td>2–3× weekly</td></tr>
+        <tr><td>Seasonal bulk buy</td><td>Buying team</td><td>Twice yearly</td></tr>
+      </table>
+
+      <h2>Known weaknesses</h2>
+      <div class="callout warn"><strong>Caution:</strong> The process is heavily dependent on individual manager judgement. Quality varies widely between stores, regional stores are most exposed, and the data needed to do better is not in front of the people making the calls.</div>
+
+      <h2>What the initiative changes</h2>
+      <ul>
+        <li>Replaces manual, memory-based reorder points with demand-driven, automatically calculated ones.</li>
+        <li>Generates daily replenishment suggestions ranked by stockout risk.</li>
+        <li>Surfaces transfer opportunities across the network automatically.</li>
+        <li>Frees managers from routine reordering to focus on customers and store standards.</li>
+      </ul>
+
+      <div class="callout note"><strong>Note:</strong> During the pilot, AI-generated suggestions will be advisory only — store managers retain the final decision until forecast quality is proven.</div>
+
+      <p class="signature">— Sarah Thompson, Chief Operating Officer</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

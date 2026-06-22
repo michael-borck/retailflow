@@ -24,10 +24,14 @@ David has seen retailers collapse from poor financial discipline and is determin
 ## Chat with David
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="3182128e-3126-4fdc-8cb2-7ba197842088"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="David Chen"
+  data-greeting="Hi, I'm David, CFO. Ask me about budgets, costs, ROI and the financial go/no-go for our AI initiatives."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with David.</em></p>
 ```
 
 ::: {.callout-warning}

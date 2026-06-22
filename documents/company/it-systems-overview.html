@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT & Data Systems Overview | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>IT &amp; Data Systems Overview</h1>
+      <p class="meta-line">Briefing · Office of the CIO · 6 February 2026</p>
+      <span class="doc-tag">Initiative: All four</span>
+      <span class="doc-tag">Technical landscape</span>
+    </div>
+
+    <div class="doc-body">
+      <p>Prepared for project teams and delivery partners working on the four funded AI initiatives. It summarises the current technology and data landscape, and the constraints every initiative must design around. Owned by the Office of the CIO (Marcus Kim).</p>
+
+      <h2>The good: e-commerce</h2>
+      <p>Our online store runs on <strong>Shopify Plus</strong> and is in good shape. It is well-integrated with our payment, content and marketing tools, scales reliably through peak trading (we cleared $4.2M in online sales over the four days of the November 2025 sale event), and exposes clean APIs. Online accounts for 35% of total revenue and is our most data-mature channel.</p>
+
+      <h2>The poor: POS &amp; inventory</h2>
+      <p>In-store point-of-sale and inventory management run on legacy systems that are <strong>10–15 years old</strong>. Key issues:</p>
+      <ul>
+        <li>Vendor support is end-of-life for the POS platform; patches are infrequent.</li>
+        <li>Inventory counts batch overnight rather than updating in real time, so store and online stock positions drift during the day.</li>
+        <li>Limited/no modern API surface — integration is via flat-file exports and a handful of brittle middleware scripts.</li>
+        <li>Customisation requires scarce specialist contractors.</li>
+      </ul>
+
+      <div class="callout warn"><strong>Constraint:</strong> Initiatives needing real-time, store-level data (inventory optimisation, dynamic pricing) must account for batch-only feeds and the absence of clean POS APIs. Budget for integration and data-engineering effort accordingly.</div>
+
+      <h2>Data fragmentation</h2>
+      <p>Our biggest structural challenge is that data is <strong>fragmented and siloed</strong>. Online (Shopify) and store (POS) data live in separate systems with no shared customer or product key. There is no single view of a customer who shops both channels, and product/SKU mappings differ between systems. Reporting today relies on manual reconciliation by the Data &amp; Analytics team.</p>
+
+      <table>
+        <tr><th>Domain</th><th>System</th><th>Health</th></tr>
+        <tr><td>E-commerce</td><td>Shopify Plus</td><td>Good</td></tr>
+        <tr><td>Point of sale</td><td>Legacy POS (10–15 yrs)</td><td>Poor</td></tr>
+        <tr><td>Inventory</td><td>Legacy inventory (batch)</td><td>Poor</td></tr>
+        <tr><td>Customer data</td><td>Split online/store</td><td>Fragmented</td></tr>
+      </table>
+
+      <h2>The team</h2>
+      <p>IT is approximately <strong>25 staff</strong>, including Dr. Priya Sharma's Data &amp; Analytics group of eight (5 data scientists/analysts + 3 data engineers). Data-engineering capacity is the binding constraint across all four initiatives, given the integration work each requires.</p>
+
+      <div class="callout risk"><strong>Risk:</strong> Multiple initiatives are competing for the same three data engineers. Sequencing and a shared integration layer should be agreed before parallel build commences.</div>
+
+      <p class="signature">— Marcus Kim, Chief Information Officer</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

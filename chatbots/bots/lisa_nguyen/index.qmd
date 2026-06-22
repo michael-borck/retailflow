@@ -24,10 +24,14 @@ Lisa is a strong advocate for AI-powered customer service, seeing it as the fast
 ## Chat with Lisa
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="be8824b4-c592-422d-96bd-8358253a4603"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="Lisa Nguyen"
+  data-greeting="Hi, I'm Lisa, Chief Customer Officer. Ask me about customer experience and how our AI initiatives affect customers."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with Lisa.</em></p>
 ```
 
 ::: {.callout-note}

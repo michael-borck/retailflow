@@ -1,0 +1,310 @@
+[
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Paint-by-numbers for tomorrow’s AnythingLLM build. For each bot: the workspace name, the system prompt to paste, and the knowledge documents to load. Then create the embed and paste it into the bot’s index.qmd.\n\nUpload method. AnythingLLM ingests .md / .html / .txt natively, so the simplest path is to upload these files directly in the AnythingLLM UI (drag-drop into the workspace, then “Save & Embed”). botstash is great for LMS exports but its scanner skips .md/.html (only pdf/docx/pptx/vtt/qti/imscc), so to use botstash you’d first render these to PDF. For Friday, UI upload is the reliable route.\nSystem prompt = the contents of that bot’s bots/&lt;name&gt;/prompt.txt plus the DELIVERY MODE line from ANYTHINGLLM_SETUP.md. botstash does not set this — paste it in the workspace’s chat settings.\nEvery bot also gets these two shared docs: _backstories/retailflow_company_overview.md and _backstories/delivery_scenario_context.md.\nDo NOT upload the red-herring / trap docs to any bot (the newsletter, the 2024 offsite notes, the 2023 pricing memo, the chatty emails). Those exist for the human document-discernment exercise; giving them to a bot would make it cite stale or irrelevant info. Bots get the accurate docs only — they already “know” the underlying facts from their profile docs.\n\n\n\nStand up these five (the afternoon stakeholders): Priya, Marcus, Emma, Tom, David. Sarah and Lisa are optional. One bot (Priya or Tom) is enough for the morning demo.\n\n\n\n\nThe data-readiness oracle every group interviews in Sprint 1, about their initiative — so she gets all four data profiles. - _backstories/priya_sharma_data_analytics.md - documents/chatbot/cs-data-profile.html - documents/pricing/pricing-data-profile.html - documents/inventory/inventory-data-profile.html - documents/fraud/fraud-data-profile.html - documents/company/it-systems-overview.html\n\n\n\nTech ambition, legacy systems, vendor/build view across initiatives. - _backstories/marcus_kim_cio.md - documents/company/it-systems-overview.html - documents/inventory/legacy-systems-note.html - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - Vendor proposals: documents/{chatbot,pricing,fraud}/vendor-proposal-*.html\n\n\n\nBoard promise, scope, what was committed. - _backstories/emma_rodriguez_ceo.md - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - documents/company/company-fact-sheet.html - documents/company/ai-principles-draft.html\n\n\n\nBudgets, costs, ROI, go/no-go criteria. - _backstories/david_chen_cfo.md - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - Vendor proposals (for costs): documents/{chatbot,pricing,fraud}/vendor-proposal-*.html - documents/company/ai-principles-draft.html\n\n\n\nFrontline reality; chatbot-focused (Sprint 2 inserts land on his team). - _backstories/tom_walsh_cs_manager.md - documents/chatbot/board-memo-chatbot.html - documents/chatbot/cs-data-profile.html - documents/chatbot/returns-policy.html - documents/company/org-chart.html\n\n\n\nOperational reality, especially inventory/store ops. - _backstories/sarah_thompson_coo.md - documents/inventory/board-memo-inventory.html - documents/inventory/stock-replenishment-policy.html - documents/company/company-fact-sheet.html\n\n\n\nCustomer experience lens. - _backstories/lisa_nguyen_cco.md - documents/chatbot/returns-policy.html - documents/company/company-fact-sheet.html\n\n\n\n\n\nSet the system prompt (prompt.txt + DELIVERY MODE line).\nIn AnythingLLM, enable an embeddable chat widget for the workspace and copy the &lt;script&gt; snippet.\nPaste it into bots/&lt;name&gt;/index.qmd, replacing the &lt;!-- AnythingLLM embed will go here --&gt; placeholder block.\nquarto render (the bot pages are Quarto-rendered) and deploy.\n\nPaths above are relative to the sites/retailflow/ repo root."
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#priority-for-friday",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#priority-for-friday",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Stand up these five (the afternoon stakeholders): Priya, Marcus, Emma, Tom, David. Sarah and Lisa are optional. One bot (Priya or Tom) is enough for the morning demo."
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#priya-sharma-head-of-data-analytics-botspriya_sharma",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#priya-sharma-head-of-data-analytics-botspriya_sharma",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "The data-readiness oracle every group interviews in Sprint 1, about their initiative — so she gets all four data profiles. - _backstories/priya_sharma_data_analytics.md - documents/chatbot/cs-data-profile.html - documents/pricing/pricing-data-profile.html - documents/inventory/inventory-data-profile.html - documents/fraud/fraud-data-profile.html - documents/company/it-systems-overview.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#marcus-kim-cio-botsmarcus_kim",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#marcus-kim-cio-botsmarcus_kim",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Tech ambition, legacy systems, vendor/build view across initiatives. - _backstories/marcus_kim_cio.md - documents/company/it-systems-overview.html - documents/inventory/legacy-systems-note.html - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - Vendor proposals: documents/{chatbot,pricing,fraud}/vendor-proposal-*.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#emma-rodriguez-ceo-botsemma_rodriguez",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#emma-rodriguez-ceo-botsemma_rodriguez",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Board promise, scope, what was committed. - _backstories/emma_rodriguez_ceo.md - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - documents/company/company-fact-sheet.html - documents/company/ai-principles-draft.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#david-chen-cfo-botsdavid_chen",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#david-chen-cfo-botsdavid_chen",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Budgets, costs, ROI, go/no-go criteria. - _backstories/david_chen_cfo.md - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - Vendor proposals (for costs): documents/{chatbot,pricing,fraud}/vendor-proposal-*.html - documents/company/ai-principles-draft.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#tom-walsh-customer-service-manager-botstom_walsh",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#tom-walsh-customer-service-manager-botstom_walsh",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Frontline reality; chatbot-focused (Sprint 2 inserts land on his team). - _backstories/tom_walsh_cs_manager.md - documents/chatbot/board-memo-chatbot.html - documents/chatbot/cs-data-profile.html - documents/chatbot/returns-policy.html - documents/company/org-chart.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#sarah-thompson-coo-botssarah_thompson-optional",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#sarah-thompson-coo-botssarah_thompson-optional",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Operational reality, especially inventory/store ops. - _backstories/sarah_thompson_coo.md - documents/inventory/board-memo-inventory.html - documents/inventory/stock-replenishment-policy.html - documents/company/company-fact-sheet.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#lisa-nguyen-cco-botslisa_nguyen-optional",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#lisa-nguyen-cco-botslisa_nguyen-optional",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Customer experience lens. - _backstories/lisa_nguyen_cco.md - documents/chatbot/returns-policy.html - documents/company/company-fact-sheet.html"
+  },
+  {
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#after-uploading-each-bot",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#after-uploading-each-bot",
+    "title": "Which documents go into which bot",
+    "section": "",
+    "text": "Set the system prompt (prompt.txt + DELIVERY MODE line).\nIn AnythingLLM, enable an embeddable chat widget for the workspace and copy the &lt;script&gt; snippet.\nPaste it into bots/&lt;name&gt;/index.qmd, replacing the &lt;!-- AnythingLLM embed will go here --&gt; placeholder block.\nquarto render (the bot pages are Quarto-rendered) and deploy.\n\nPaths above are relative to the sites/retailflow/ repo root."
+  },
+  {
+    "objectID": "chatbots/index.html",
+    "href": "chatbots/index.html",
+    "title": "Leadership Team",
+    "section": "",
+    "text": "Engage with RetailFlow’s leadership team to understand their perspectives on AI transformation, digital strategy, and business operations.\nEach executive brings different priorities, concerns, and expertise. Use these conversations to:\n\nExplore stakeholder perspectives on AI initiatives\nPractice executive communication before key meetings\nUnderstand tensions between growth, cost, operations, and innovation\nTest your recommendations against different viewpoints\n\n\n\n\n\n\n\nNoteFor Executive Education Participants\n\n\n\nThese chatbots are designed to support your learning in AI Leadership and Business Innovation courses. The executives reflect realistic tensions found in organisations undergoing digital transformation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmma Rodriguez\n\n\nChief Executive Officer\n\n\n\n\n\n\n\n\n\n\n\n\nDavid Chen\n\n\nChief Financial Officer\n\n\n\n\n\n\n\n\n\n\n\n\nSarah Thompson\n\n\nChief Operating Officer\n\n\n\n\n\n\n\n\n\n\n\n\nMarcus Kim\n\n\nChief Information Officer\n\n\n\n\n\n\n\n\n\n\n\n\nLisa Nguyen\n\n\nChief Customer Officer\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Priya Sharma\n\n\nHead of Data & Analytics\n\n\n\n\n\n\n\n\n\n\n\n\nTom Walsh\n\n\nCustomer Service Manager\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "chatbots/bots/sarah_thompson/index.html",
+    "href": "chatbots/bots/sarah_thompson/index.html",
+    "title": "Sarah Thompson",
+    "section": "",
+    "text": "Sarah Thompson is COO of RetailFlow with 15 years at the company - the longest tenure on the executive team. She started as a store manager and worked her way up, giving her deep understanding of operations and the frontline experience.\nSarah is the voice of the 2,000+ employees in the boardroom, advocating for realistic implementation and employee buy-in on any change initiative."
+  },
+  {
+    "objectID": "chatbots/bots/sarah_thompson/index.html#about-sarah",
+    "href": "chatbots/bots/sarah_thompson/index.html#about-sarah",
+    "title": "Sarah Thompson",
+    "section": "",
+    "text": "Sarah Thompson is COO of RetailFlow with 15 years at the company - the longest tenure on the executive team. She started as a store manager and worked her way up, giving her deep understanding of operations and the frontline experience.\nSarah is the voice of the 2,000+ employees in the boardroom, advocating for realistic implementation and employee buy-in on any change initiative."
+  },
+  {
+    "objectID": "chatbots/bots/sarah_thompson/index.html#operational-focus",
+    "href": "chatbots/bots/sarah_thompson/index.html#operational-focus",
+    "title": "Sarah Thompson",
+    "section": "Operational Focus",
+    "text": "Operational Focus\n\nStore operations and performance\nEmployee experience and engagement\nChange management and implementation\nOperational feasibility of initiatives"
+  },
+  {
+    "objectID": "chatbots/bots/sarah_thompson/index.html#chat-with-sarah",
+    "href": "chatbots/bots/sarah_thompson/index.html#chat-with-sarah",
+    "title": "Sarah Thompson",
+    "section": "Chat with Sarah",
+    "text": "Chat with Sarah\n\nClick the chat button (bottom-right) to talk with Sarah.\n\n\n\n\n\n\nNote\n\n\n\nSarah brings the operational reality check. She’ll ask about implementation plans, employee impact, and whether initiatives will work on the shop floor. Her concerns are legitimate - many corporate initiatives fail at implementation."
+  },
+  {
+    "objectID": "chatbots/bots/marcus_kim/index.html",
+    "href": "chatbots/bots/marcus_kim/index.html",
+    "title": "Marcus Kim",
+    "section": "",
+    "text": "Marcus Kim is CIO of RetailFlow, joining 2 years ago from a technology consulting firm. Emma brought him in specifically to drive technology transformation and build AI capabilities.\nMarcus is passionate about AI and frustrated by legacy systems. He believes RetailFlow needs to move faster on digital transformation to remain competitive."
+  },
+  {
+    "objectID": "chatbots/bots/marcus_kim/index.html#about-marcus",
+    "href": "chatbots/bots/marcus_kim/index.html#about-marcus",
+    "title": "Marcus Kim",
+    "section": "",
+    "text": "Marcus Kim is CIO of RetailFlow, joining 2 years ago from a technology consulting firm. Emma brought him in specifically to drive technology transformation and build AI capabilities.\nMarcus is passionate about AI and frustrated by legacy systems. He believes RetailFlow needs to move faster on digital transformation to remain competitive."
+  },
+  {
+    "objectID": "chatbots/bots/marcus_kim/index.html#technology-focus",
+    "href": "chatbots/bots/marcus_kim/index.html#technology-focus",
+    "title": "Marcus Kim",
+    "section": "Technology Focus",
+    "text": "Technology Focus\n\nAI adoption and implementation\nSystem modernization\nData and analytics capabilities\nDigital transformation speed"
+  },
+  {
+    "objectID": "chatbots/bots/marcus_kim/index.html#chat-with-marcus",
+    "href": "chatbots/bots/marcus_kim/index.html#chat-with-marcus",
+    "title": "Marcus Kim",
+    "section": "Chat with Marcus",
+    "text": "Chat with Marcus\n\nClick the chat button (bottom-right) to talk with Marcus.\n\n\n\n\n\n\nNote\n\n\n\nMarcus is the technology advocate. He’ll be enthusiastic about AI opportunities and push for bold moves. He may express frustration with the pace of change and legacy constraints."
+  },
+  {
+    "objectID": "chatbots/bots/emma_rodriguez/index.html",
+    "href": "chatbots/bots/emma_rodriguez/index.html",
+    "title": "Emma Rodriguez",
+    "section": "",
+    "text": "Emma Rodriguez is CEO of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.\nEmma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness."
+  },
+  {
+    "objectID": "chatbots/bots/emma_rodriguez/index.html#about-emma",
+    "href": "chatbots/bots/emma_rodriguez/index.html#about-emma",
+    "title": "Emma Rodriguez",
+    "section": "",
+    "text": "Emma Rodriguez is CEO of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.\nEmma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness."
+  },
+  {
+    "objectID": "chatbots/bots/emma_rodriguez/index.html#strategic-focus",
+    "href": "chatbots/bots/emma_rodriguez/index.html#strategic-focus",
+    "title": "Emma Rodriguez",
+    "section": "Strategic Focus",
+    "text": "Strategic Focus\n\nDigital transformation and AI adoption\nCompetitive positioning against online retailers\nBoard expectations and investor relations\nBalancing speed with bringing people along"
+  },
+  {
+    "objectID": "chatbots/bots/emma_rodriguez/index.html#chat-with-emma",
+    "href": "chatbots/bots/emma_rodriguez/index.html#chat-with-emma",
+    "title": "Emma Rodriguez",
+    "section": "Chat with Emma",
+    "text": "Chat with Emma\n\nClick the chat button (bottom-right) to talk with Emma.\n\n\n\n\n\n\nNote\n\n\n\nEmma can discuss strategic direction, board pressures, and transformation priorities. For financial details, she may refer you to David Chen. For operational concerns, she may suggest Sarah Thompson."
+  },
+  {
+    "objectID": "chatbots/bots/david_chen/index.html",
+    "href": "chatbots/bots/david_chen/index.html",
+    "title": "David Chen",
+    "section": "",
+    "text": "David Chen is CFO of RetailFlow and the longest-serving member of the executive team at 8 years. Promoted internally, he brings deep financial knowledge and a conservative approach to investment decisions.\nDavid has seen retailers collapse from poor financial discipline and is determined to ensure RetailFlow doesn’t make the same mistakes with technology investments."
+  },
+  {
+    "objectID": "chatbots/bots/david_chen/index.html#about-david",
+    "href": "chatbots/bots/david_chen/index.html#about-david",
+    "title": "David Chen",
+    "section": "",
+    "text": "David Chen is CFO of RetailFlow and the longest-serving member of the executive team at 8 years. Promoted internally, he brings deep financial knowledge and a conservative approach to investment decisions.\nDavid has seen retailers collapse from poor financial discipline and is determined to ensure RetailFlow doesn’t make the same mistakes with technology investments."
+  },
+  {
+    "objectID": "chatbots/bots/david_chen/index.html#financial-focus",
+    "href": "chatbots/bots/david_chen/index.html#financial-focus",
+    "title": "David Chen",
+    "section": "Financial Focus",
+    "text": "Financial Focus\n\nROI accountability on all investments\nMargin protection and cost control\nFinancial risk management\nEvidence-based decision making"
+  },
+  {
+    "objectID": "chatbots/bots/david_chen/index.html#chat-with-david",
+    "href": "chatbots/bots/david_chen/index.html#chat-with-david",
+    "title": "David Chen",
+    "section": "Chat with David",
+    "text": "Chat with David\n\nClick the chat button (bottom-right) to talk with David.\n\n\n\n\n\n\nWarning\n\n\n\nDavid is the CFO - expect him to challenge your assumptions, ask for ROI projections, and push back on investments without clear financial returns. This is valuable practice for real executive presentations."
+  },
+  {
+    "objectID": "chatbots/bots/lisa_nguyen/index.html",
+    "href": "chatbots/bots/lisa_nguyen/index.html",
+    "title": "Lisa Nguyen",
+    "section": "",
+    "text": "Lisa Nguyen is Chief Customer Officer of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.\nLisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics."
+  },
+  {
+    "objectID": "chatbots/bots/lisa_nguyen/index.html#about-lisa",
+    "href": "chatbots/bots/lisa_nguyen/index.html#about-lisa",
+    "title": "Lisa Nguyen",
+    "section": "",
+    "text": "Lisa Nguyen is Chief Customer Officer of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.\nLisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics."
+  },
+  {
+    "objectID": "chatbots/bots/lisa_nguyen/index.html#customer-focus",
+    "href": "chatbots/bots/lisa_nguyen/index.html#customer-focus",
+    "title": "Lisa Nguyen",
+    "section": "Customer Focus",
+    "text": "Customer Focus\n\nCustomer satisfaction improvement\nResponse time reduction\nAI chatbot implementation\nCustomer experience metrics"
+  },
+  {
+    "objectID": "chatbots/bots/lisa_nguyen/index.html#chat-with-lisa",
+    "href": "chatbots/bots/lisa_nguyen/index.html#chat-with-lisa",
+    "title": "Lisa Nguyen",
+    "section": "Chat with Lisa",
+    "text": "Chat with Lisa\n\nClick the chat button (bottom-right) to talk with Lisa.\n\n\n\n\n\n\nNote\n\n\n\nLisa brings the customer perspective to every discussion. She’s a strong advocate for the chatbot initiative and will push for customer impact to be a key decision factor."
+  },
+  {
+    "objectID": "chatbots/bots/priya_sharma/index.html",
+    "href": "chatbots/bots/priya_sharma/index.html",
+    "title": "Dr. Priya Sharma",
+    "section": "",
+    "text": "Dr. Priya Sharma is Head of Data & Analytics at RetailFlow, joining 18 months ago to build the company’s data science capability. With a PhD in Machine Learning and 8 years of industry experience, she brings technical rigor to AI investment decisions.\nPriya provides honest assessments of AI feasibility and timelines, serving as a bridge between Marcus’s tech vision and business reality."
+  },
+  {
+    "objectID": "chatbots/bots/priya_sharma/index.html#about-priya",
+    "href": "chatbots/bots/priya_sharma/index.html#about-priya",
+    "title": "Dr. Priya Sharma",
+    "section": "",
+    "text": "Dr. Priya Sharma is Head of Data & Analytics at RetailFlow, joining 18 months ago to build the company’s data science capability. With a PhD in Machine Learning and 8 years of industry experience, she brings technical rigor to AI investment decisions.\nPriya provides honest assessments of AI feasibility and timelines, serving as a bridge between Marcus’s tech vision and business reality."
+  },
+  {
+    "objectID": "chatbots/bots/priya_sharma/index.html#technical-focus",
+    "href": "chatbots/bots/priya_sharma/index.html#technical-focus",
+    "title": "Dr. Priya Sharma",
+    "section": "Technical Focus",
+    "text": "Technical Focus\n\nAI feasibility and timelines\nData quality and infrastructure\nBuild vs buy decisions\nMachine learning implementation"
+  },
+  {
+    "objectID": "chatbots/bots/priya_sharma/index.html#chat-with-priya",
+    "href": "chatbots/bots/priya_sharma/index.html#chat-with-priya",
+    "title": "Dr. Priya Sharma",
+    "section": "Chat with Priya",
+    "text": "Chat with Priya\n\nClick the chat button (bottom-right) to talk with Priya.\n\n\n\n\n\n\nNote\n\n\n\nPriya provides technical due diligence on AI initiatives. She’ll give honest assessments of feasibility, realistic timelines, and recommend build vs buy approaches. Her credibility comes from not over-promising."
+  },
+  {
+    "objectID": "chatbots/bots/tom_walsh/index.html",
+    "href": "chatbots/bots/tom_walsh/index.html",
+    "title": "Tom Walsh",
+    "section": "",
+    "text": "Tom Walsh is Customer Service Manager at RetailFlow, managing a team of 45 people handling 3,000+ customer contacts per week. He’s been at RetailFlow for 6 years and built the CS team from 25 to 45 people.\nTom brings the frontline perspective to AI discussions. He knows what customers actually ask, where bottlenecks exist, and what his team worries about with AI."
+  },
+  {
+    "objectID": "chatbots/bots/tom_walsh/index.html#about-tom",
+    "href": "chatbots/bots/tom_walsh/index.html#about-tom",
+    "title": "Tom Walsh",
+    "section": "",
+    "text": "Tom Walsh is Customer Service Manager at RetailFlow, managing a team of 45 people handling 3,000+ customer contacts per week. He’s been at RetailFlow for 6 years and built the CS team from 25 to 45 people.\nTom brings the frontline perspective to AI discussions. He knows what customers actually ask, where bottlenecks exist, and what his team worries about with AI."
+  },
+  {
+    "objectID": "chatbots/bots/tom_walsh/index.html#frontline-focus",
+    "href": "chatbots/bots/tom_walsh/index.html#frontline-focus",
+    "title": "Tom Walsh",
+    "section": "Frontline Focus",
+    "text": "Frontline Focus\n\nCustomer service operations\nTeam management and morale\nImplementation practicalities\nHuman-AI handoff concerns"
+  },
+  {
+    "objectID": "chatbots/bots/tom_walsh/index.html#chat-with-tom",
+    "href": "chatbots/bots/tom_walsh/index.html#chat-with-tom",
+    "title": "Tom Walsh",
+    "section": "Chat with Tom",
+    "text": "Chat with Tom\n\nClick the chat button (bottom-right) to talk with Tom.\n\n\n\n\n\n\nWarning\n\n\n\nTom represents the people who will live with AI decisions. His concerns about job security, implementation, and customer impact are real. Engaging with his perspective will make your recommendations stronger."
+  },
+  {
+    "objectID": "chatbots/ANYTHINGLLM_SETUP.html",
+    "href": "chatbots/ANYTHINGLLM_SETUP.html",
+    "title": "AnythingLLM Setup — RetailFlow Virtual Staff",
+    "section": "",
+    "text": "How to turn the text personas in this folder into embedded chatbots for the AI in Delivery course. Do this once per persona. Budget ~10–15 min per bot the first time.\n\n\nEach bot = one AnythingLLM workspace with three knowledge documents + a system prompt + an embed.\nDocuments to upload to the workspace (_backstories/): 1. retailflow_company_overview.md — shared company facts (every bot) 2. delivery_scenario_context.md — shared delivery framing (every bot, for this course) 3. The persona’s own backstory, e.g. priya_sharma_data_analytics.md\nSystem prompt: paste the contents of that bot’s bots/&lt;name&gt;/prompt.txt, then append the line below so the bot is in delivery mode:\n\nDELIVERY MODE: The board has already funded the AI initiatives. The learner is a delivery lead figuring out how to ship one of them. Answer their scoping, data, stakeholder, human-in-the-loop, roadmap and risk questions from your role. Disagree with other executives where your priorities differ. If you don’t know a precise figure or policy, say so — never invent one.\n\n\n\n\n\nCreate workspace named after the person (e.g. “Priya Sharma — Data”).\nUpload the three documents above; embed/save so they’re in the workspace’s vector store.\nPaste the system prompt (prompt.txt contents + the DELIVERY MODE line) into the workspace’s chat/system prompt setting.\nSet chat mode to “query”/“chat” as preferred; keep temperature moderate so it stays in character.\nCreate an embed (Embeddable Chat Widgets → New embed → select this workspace). Copy the &lt;script&gt; snippet AnythingLLM generates.\nPaste the snippet into bots/&lt;name&gt;/index.qmd, replacing this placeholder block:\n\n  Chatbot loading...\n  \n\nRe-render the Quarto site and check the bot page loads the widget.\n\n\n\n\nStand these up first (the core afternoon stakeholders): Priya, Marcus, Emma, Tom Walsh, David. Sarah and Lisa are optional/nice-to-have.\nIf you only have time for the morning demo, one bot is enough — Tom Walsh or Priya — to do the “watch it confidently hallucinate a policy” moment. The afternoon can fall back to the text personas as printed briefing cards (see the course’s facilitator quick reference).\n\n\n\nThe delivery_scenario_context.md already tells every bot to stay in character, admit when it doesn’t know, and avoid inventing precise figures or quoting model versions/stats. If a bot drifts, tighten the system prompt rather than the documents."
+  },
+  {
+    "objectID": "chatbots/ANYTHINGLLM_SETUP.html#what-you-need-per-bot",
+    "href": "chatbots/ANYTHINGLLM_SETUP.html#what-you-need-per-bot",
+    "title": "AnythingLLM Setup — RetailFlow Virtual Staff",
+    "section": "",
+    "text": "Each bot = one AnythingLLM workspace with three knowledge documents + a system prompt + an embed.\nDocuments to upload to the workspace (_backstories/): 1. retailflow_company_overview.md — shared company facts (every bot) 2. delivery_scenario_context.md — shared delivery framing (every bot, for this course) 3. The persona’s own backstory, e.g. priya_sharma_data_analytics.md\nSystem prompt: paste the contents of that bot’s bots/&lt;name&gt;/prompt.txt, then append the line below so the bot is in delivery mode:\n\nDELIVERY MODE: The board has already funded the AI initiatives. The learner is a delivery lead figuring out how to ship one of them. Answer their scoping, data, stakeholder, human-in-the-loop, roadmap and risk questions from your role. Disagree with other executives where your priorities differ. If you don’t know a precise figure or policy, say so — never invent one."
+  },
+  {
+    "objectID": "chatbots/ANYTHINGLLM_SETUP.html#steps-per-bot",
+    "href": "chatbots/ANYTHINGLLM_SETUP.html#steps-per-bot",
+    "title": "AnythingLLM Setup — RetailFlow Virtual Staff",
+    "section": "",
+    "text": "Create workspace named after the person (e.g. “Priya Sharma — Data”).\nUpload the three documents above; embed/save so they’re in the workspace’s vector store.\nPaste the system prompt (prompt.txt contents + the DELIVERY MODE line) into the workspace’s chat/system prompt setting.\nSet chat mode to “query”/“chat” as preferred; keep temperature moderate so it stays in character.\nCreate an embed (Embeddable Chat Widgets → New embed → select this workspace). Copy the &lt;script&gt; snippet AnythingLLM generates.\nPaste the snippet into bots/&lt;name&gt;/index.qmd, replacing this placeholder block:\n\n  Chatbot loading...\n  \n\nRe-render the Quarto site and check the bot page loads the widget."
+  },
+  {
+    "objectID": "chatbots/ANYTHINGLLM_SETUP.html#priority-order-for-friday",
+    "href": "chatbots/ANYTHINGLLM_SETUP.html#priority-order-for-friday",
+    "title": "AnythingLLM Setup — RetailFlow Virtual Staff",
+    "section": "",
+    "text": "Stand these up first (the core afternoon stakeholders): Priya, Marcus, Emma, Tom Walsh, David. Sarah and Lisa are optional/nice-to-have.\nIf you only have time for the morning demo, one bot is enough — Tom Walsh or Priya — to do the “watch it confidently hallucinate a policy” moment. The afternoon can fall back to the text personas as printed briefing cards (see the course’s facilitator quick reference)."
+  },
+  {
+    "objectID": "chatbots/ANYTHINGLLM_SETUP.html#guardrail-reminder",
+    "href": "chatbots/ANYTHINGLLM_SETUP.html#guardrail-reminder",
+    "title": "AnythingLLM Setup — RetailFlow Virtual Staff",
+    "section": "",
+    "text": "The delivery_scenario_context.md already tells every bot to stay in character, admit when it doesn’t know, and avoid inventing precise figures or quoting model versions/stats. If a bot drifts, tighten the system prompt rather than the documents."
+  }
+]

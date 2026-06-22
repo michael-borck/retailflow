@@ -24,10 +24,14 @@ Tom brings the frontline perspective to AI discussions. He knows what customers 
 ## Chat with Tom
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="5d832926-e7af-48e2-a299-713909538722"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="Tom Walsh"
+  data-greeting="Hi, I'm Tom, Customer Service Manager. Ask me about the frontline team and customer impact of the chatbot rollout."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with Tom.</em></p>
 ```
 
 ::: {.callout-warning}

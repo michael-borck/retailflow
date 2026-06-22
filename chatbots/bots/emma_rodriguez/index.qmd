@@ -24,10 +24,14 @@ Emma is under pressure to deliver results on the transformation agenda while nav
 ## Chat with Emma
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="6940470a-505f-4ea8-9ebc-acb1faa8ca6f"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="Emma Rodriguez"
+  data-greeting="Hi, I'm Emma, CEO. Ask me about strategy, board expectations and priorities for our AI initiatives."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with Emma.</em></p>
 ```
 
 ::: {.callout-note}

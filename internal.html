@@ -335,44 +335,77 @@
             </div>
 
             <div class="alert-info">
-                <strong>📋 For Masterclass Participants:</strong> This portal provides access to RetailFlow internal resources needed for your exercises. Navigate to the AI Pilot Dashboard for Activity 4 (Scale/Pivot/Kill decision).
+                <strong>📋 For Masterclass Participants:</strong> This portal holds RetailFlow's internal documents for the four funded AI initiatives, plus company-wide records. <strong>Not everything here is relevant to your project</strong> — part of the job is working out which documents matter, which are out of date, and which are noise. Start with your initiative's folder, but read widely.
+            </div>
+
+            <style>
+                .repo-card ul { list-style: none; margin: 0; padding: 0; }
+                .repo-card li { border-bottom: 1px solid var(--border); }
+                .repo-card li:last-child { border-bottom: none; }
+                .repo-card li a { display: block; padding: 0.6rem 0.25rem; color: var(--text);
+                    text-decoration: none; font-size: 0.92rem; background: none; border-radius: 0; }
+                .repo-card li a:hover { background: var(--light); color: var(--primary-dark); padding-left: 0.6rem; }
+                .repo-card .budget { float: right; color: #9ca3af; font-size: 0.8rem; font-weight: 600; }
+                .repo-card .kind { color: #9ca3af; font-size: 0.78rem; }
+            </style>
+
+            <div class="dashboard-card repo-card" style="border-left-color: var(--accent); margin-bottom: 1.5rem;">
+                <h3 style="color: var(--accent);">🏢 Company-wide documents</h3>
+                <p>Background that may apply to any initiative — read critically.</p>
+                <ul>
+                    <li><a href="documents/company/company-fact-sheet.html">Company fact sheet <span class="kind">· reference</span></a></li>
+                    <li><a href="documents/company/org-chart.html">Leadership org chart &amp; team structure <span class="kind">· reference</span></a></li>
+                    <li><a href="documents/company/it-systems-overview.html">IT &amp; data systems overview <span class="kind">· reference</span></a></li>
+                    <li><a href="documents/company/ai-principles-draft.html">Responsible AI principles <span class="kind">· draft policy</span></a></li>
+                    <li><a href="documents/company/all-staff-newsletter-feb2026.html">The RetailFlow Buzz — staff newsletter <span class="kind">· Feb 2026</span></a></li>
+                    <li><a href="documents/company/strategy-offsite-notes-2024.html">Strategy offsite notes <span class="kind">· offsite minutes</span></a></li>
+                </ul>
             </div>
 
             <div class="dashboard-grid">
-                <div class="dashboard-card">
-                    <h3>📊 AI Pilot Dashboard</h3>
-                    <p>Week 6 performance data and metrics for the AI customer service pilot. Use this for your Scale/Pivot/Kill decision.</p>
-                    <a href="#dashboard" onclick="showDashboard(); return false;">View Dashboard</a>
+                <div class="dashboard-card repo-card">
+                    <h3>💬 Customer-service chatbot <span class="budget">$450K</span></h3>
+                    <ul>
+                        <li><a href="documents/chatbot/board-memo-chatbot.html">Board funding memo</a></li>
+                        <li><a href="documents/chatbot/cs-data-profile.html">Data readiness profile</a></li>
+                        <li><a href="documents/chatbot/vendor-proposal-chatbot.html">Vendor proposal</a></li>
+                        <li><a href="documents/chatbot/returns-policy.html">Returns &amp; refunds policy</a></li>
+                        <li><a href="documents/chatbot/cs-team-email-thread.html">CS team email thread</a></li>
+                        <li><a href="#dashboard" onclick="showDashboard(); return false;">📊 AI pilot dashboard (Week 6)</a></li>
+                    </ul>
                 </div>
 
-                <div class="dashboard-card coming-soon">
-                    <h3>📁 Project Documentation</h3>
-                    <p>Access pilot scoping documents, meeting notes, and project timelines.</p>
-                    <a href="#" onclick="return false;">Coming Soon</a>
+                <div class="dashboard-card repo-card">
+                    <h3>🏷️ Dynamic pricing <span class="budget">$850K</span></h3>
+                    <ul>
+                        <li><a href="documents/pricing/board-memo-pricing.html">Board funding memo</a></li>
+                        <li><a href="documents/pricing/pricing-data-profile.html">Data readiness profile</a></li>
+                        <li><a href="documents/pricing/vendor-proposal-pricing.html">Vendor proposal</a></li>
+                        <li><a href="documents/pricing/pricing-governance-policy.html">Pricing &amp; markdown governance</a></li>
+                        <li><a href="documents/pricing/strategy-memo-2023.html">Strategy memo on pricing</a></li>
+                    </ul>
                 </div>
 
-                <div class="dashboard-card coming-soon">
-                    <h3>💰 Budget Tracking</h3>
-                    <p>View current spend, projected costs, and ROI calculations for the AI pilot.</p>
-                    <a href="#" onclick="return false;">Coming Soon</a>
+                <div class="dashboard-card repo-card">
+                    <h3>📦 Inventory optimisation <span class="budget">$1.1M</span></h3>
+                    <ul>
+                        <li><a href="documents/inventory/board-memo-inventory.html">Board funding memo</a></li>
+                        <li><a href="documents/inventory/inventory-data-profile.html">Data readiness profile</a></li>
+                        <li><a href="documents/inventory/legacy-systems-note.html">Legacy systems note (IT)</a></li>
+                        <li><a href="documents/inventory/stock-replenishment-policy.html">Stock replenishment policy</a></li>
+                        <li><a href="documents/inventory/warehouse-ops-email.html">Warehouse operations email</a></li>
+                    </ul>
                 </div>
 
-                <div class="dashboard-card coming-soon">
-                    <h3>👥 Stakeholder Updates</h3>
-                    <p>Executive summaries, board presentations, and stakeholder communication logs.</p>
-                    <a href="#" onclick="return false;">Coming Soon</a>
-                </div>
-
-                <div class="dashboard-card coming-soon">
-                    <h3>📧 Team Feedback</h3>
-                    <p>Survey results, agent feedback, and team adoption metrics over time.</p>
-                    <a href="#" onclick="return false;">Coming Soon</a>
-                </div>
-
-                <div class="dashboard-card coming-soon">
-                    <h3>⚠️ Incident Log</h3>
-                    <p>Track and review all incidents, escalations, and their resolutions.</p>
-                    <a href="#" onclick="return false;">Coming Soon</a>
+                <div class="dashboard-card repo-card">
+                    <h3>🛡️ Fraud detection <span class="budget">$650K</span></h3>
+                    <ul>
+                        <li><a href="documents/fraud/board-memo-fraud.html">Board funding memo</a></li>
+                        <li><a href="documents/fraud/fraud-data-profile.html">Data readiness profile</a></li>
+                        <li><a href="documents/fraud/vendor-proposal-fraud.html">Vendor proposal</a></li>
+                        <li><a href="documents/fraud/chargeback-refund-policy.html">Chargeback &amp; refund policy</a></li>
+                        <li><a href="documents/fraud/finance-team-email.html">Finance team email</a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -765,14 +798,14 @@ ${document.querySelector('style').textContent}
         <h2>💬 Leadership & Team Feedback</h2>
         <div class="column-2">
             <div>
-                <h3 style="color: #667eea; margin-bottom: 12px;">CEO (VP of Operations)</h3>
+                <h3 style="color: #667eea; margin-bottom: 12px;">Emma Rodriguez — CEO</h3>
                 <div class="quote">
                     <p><strong>"Good progress on response times. Still want to see accuracy at 90% before we scale. Cost savings below projections. If we get accuracy up and volume up, this scales. Otherwise, we pivot or kill."</strong></p>
                     <p style="margin-top: 8px; font-size: 0.85em; color: #666;"><strong>Priority:</strong> Accuracy + ROI visibility</p>
                 </div>
             </div>
             <div>
-                <h3 style="color: #667eea; margin-bottom: 12px;">CFO (Finance)</h3>
+                <h3 style="color: #667eea; margin-bottom: 12px;">David Chen — CFO</h3>
                 <div class="quote">
                     <p><strong>"Cost per query is $14 vs. $12 target. At current scale, not seeing ROI. Need 60%+ AI coverage for meaningful savings. Budget on track so far."</strong></p>
                     <p style="margin-top: 8px; font-size: 0.85em; color: #666;"><strong>Priority:</strong> Cost efficiency, scale to profitability</p>
@@ -781,16 +814,16 @@ ${document.querySelector('style').textContent}
         </div>
         <div class="column-2" style="margin-top: 18px;">
             <div>
-                <h3 style="color: #667eea; margin-bottom: 12px;">Data Scientist</h3>
+                <h3 style="color: #667eea; margin-bottom: 12px;">Dr. Priya Sharma — Head of Data &amp; Analytics</h3>
                 <div class="quote">
                     <p><strong>"Accuracy bottleneck is product care (78% vs. 90%+ for other types). With 4 more weeks of refinement and product data, I can get to 92% overall. After that, we can confidently scale."</strong></p>
                     <p style="margin-top: 8px; font-size: 0.85em; color: #666;"><strong>Priority:</strong> Model quality, technical feasibility</p>
                 </div>
             </div>
             <div>
-                <h3 style="color: #667eea; margin-bottom: 12px;">Customer Service Manager</h3>
+                <h3 style="color: #667eea; margin-bottom: 12px;">Tom Walsh — Customer Service Manager</h3>
                 <div class="quote">
-                    <p><strong>"Team is engaged. Initial resistance from Sarah resolved. Adoption steady at 75%. If accuracy improves, remaining agents will fully adopt. No blockers from operations."</strong></p>
+                    <p><strong>"Team is engaged. Initial resistance from one senior agent (Jess) resolved. Adoption steady at 75%. If accuracy improves, remaining agents will fully adopt. No blockers from operations."</strong></p>
                     <p style="margin-top: 8px; font-size: 0.85em; color: #666;"><strong>Priority:</strong> Team adoption, smooth operations</p>
                 </div>
             </div>
@@ -814,9 +847,9 @@ ${document.querySelector('style').textContent}
             </tr>
             <tr>
                 <td><strong>Week 2</strong></td>
-                <td>Team resistance (Sarah & 3 agents)</td>
+                <td>Team resistance (Jess & 3 agents)</td>
                 <td><span class="status met">RESOLVED</span></td>
-                <td>Engaged Sarah, included in feedback process</td>
+                <td>Engaged Jess, included in feedback process</td>
             </tr>
             <tr>
                 <td><strong>Week 3</strong></td>

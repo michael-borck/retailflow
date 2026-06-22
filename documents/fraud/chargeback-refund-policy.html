@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chargeback, Refund & Suspected-Fraud Handling Policy | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Chargeback, Refund &amp; Suspected-Fraud Handling Policy</h1>
+      <p class="meta-line">Policy · Customer Service &amp; Finance · Current as at 23 January 2026</p>
+      <span class="doc-tag">Initiative: Fraud Detection</span>
+      <span class="doc-tag">Owner: T. Walsh</span>
+    </div>
+
+    <div class="doc-body">
+      <p>This policy sets out how RetailFlow currently handles refunds, payment chargebacks, and orders suspected of fraud across our online and store channels. It reflects today's manual process and will be revised once the new fraud-detection capability is in place.</p>
+
+      <h2>1. Refunds (legitimate)</h2>
+      <ul>
+        <li>Online returns within 30 days are auto-approved in Shopify and refunded to the original payment method within 3–5 business days.</li>
+        <li>In-store returns are processed at the POS by the store team; manager sign-off is required above $250.</li>
+      </ul>
+
+      <h2>2. Suspected-fraud review (online)</h2>
+      <p>Orders are manually held for review when they trip one or more of our rule-based flags:</p>
+      <table>
+        <tr><th>Flag</th><th>Trigger</th></tr>
+        <tr><td>High value</td><td>Order over $600 from a new account</td></tr>
+        <tr><td>Address mismatch</td><td>Billing and shipping in different states</td></tr>
+        <tr><td>Velocity</td><td>3+ orders from one card in 24 hours</td></tr>
+        <tr><td>Express + new</td><td>Express shipping on a first-time account</td></tr>
+      </table>
+      <p>Flagged orders go to the online customer-service queue. An agent reviews the order, may phone the customer to verify, and either releases or cancels it. Target turnaround is 4 hours during business hours, though the queue routinely runs longer during sale periods.</p>
+
+      <div class="callout warn"><strong>Watch:</strong> Releasing or cancelling an order is currently a judgement call by the reviewing agent. There is no consistent record of how often we cancel an order that turns out to have been a genuine customer, so we cannot measure our false-block rate.</div>
+
+      <h2>3. Approvals</h2>
+      <ul>
+        <li>Release or cancel of a flagged order under $1,000: customer-service agent.</li>
+        <li>Cancel/refund $1,000–$5,000: Tom Walsh (Customer Service Manager).</li>
+        <li>Above $5,000, or any pattern suggesting organised fraud: escalate to Finance (David Chen's team).</li>
+      </ul>
+
+      <h2>4. Chargebacks</h2>
+      <p>When a chargeback is lodged by a cardholder's bank, Finance gathers evidence (order, delivery confirmation, review notes) and decides within the scheme deadline whether to dispute or accept. Dispute success depends heavily on the quality of notes the original reviewer left — which is inconsistent.</p>
+
+      <h2>5. Customer-experience guidance</h2>
+      <div class="callout note"><strong>Note:</strong> When contacting a flagged customer, agents must assume good faith. Never use the word "fraud" with a customer; frame the call as a routine security verification. A wrongly accused customer rarely returns.</div>
+
+      <p class="signature">— Tom Walsh, Customer Service Manager</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

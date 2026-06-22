@@ -24,10 +24,14 @@ Marcus is passionate about AI and frustrated by legacy systems. He believes Reta
 ## Chat with Marcus
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="5a5ee255-b5a4-4c99-8045-11452bdd92d1"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="Marcus Kim"
+  data-greeting="Hi, I'm Marcus, CIO. Ask me about our technology, legacy systems and build-vs-buy for RetailFlow's AI initiatives."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with Marcus.</em></p>
 ```
 
 ::: {.callout-note}

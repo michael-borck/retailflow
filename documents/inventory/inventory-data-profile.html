@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventory Data-Readiness Note | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Inventory Data-Readiness Assessment</h1>
+      <p class="meta-line">Technical Note · Data &amp; Analytics · 19 February 2026</p>
+      <span class="doc-tag">Initiative: Inventory Optimisation</span>
+      <span class="doc-tag">Author: P. Sharma</span>
+    </div>
+
+    <div class="doc-body">
+      <p><strong>To:</strong> Emma Rodriguez (CEO), David Chen (CFO), Marcus Kim (CIO)<br>
+      <strong>From:</strong> Dr. Priya Sharma, Head of Data &amp; Analytics</p>
+
+      <p>Now that funding is approved, this note gives my honest read on data readiness. I am confident the value is real — but the scoping numbers underestimate the data-quality and legacy-integration effort. I want that on the record before we commit to a timeline.</p>
+
+      <h2>Where the data lives</h2>
+      <table>
+        <tr><th>Source</th><th>System</th><th>State</th></tr>
+        <tr><td>Online sales &amp; stock</td><td>Shopify Plus</td><td>Clean, API-accessible, near real-time</td></tr>
+        <tr><td>In-store sales</td><td>Legacy POS (~12 yrs)</td><td>Nightly batch export, inconsistent SKUs</td></tr>
+        <tr><td>Stock-on-hand by store</td><td>Legacy inventory system (~14 yrs)</td><td>Manual adjustments, ~7% variance vs counts</td></tr>
+        <tr><td>Supplier lead times</td><td>Spreadsheets / email</td><td>Unstructured, not systematised</td></tr>
+      </table>
+
+      <h2>The core problem: siloed and inconsistent</h2>
+      <p>Online and store data do not share a single product master. The same item can carry different SKUs across Shopify, the POS, and the inventory system. We estimate <strong>~22% of SKUs</strong> need mapping or cleansing before they are usable for forecasting. A forecast is only as good as the stock-on-hand figure it starts from, and store-level accuracy currently sits around 93% against physical counts.</p>
+
+      <div class="callout risk"><strong>Risk:</strong> The funded plan treats integration as a connector exercise. In reality it is a data-quality program — product-master reconciliation, SKU mapping, and trustworthy stock-on-hand — that must largely precede modelling. This is the most underestimated part of the budget.</div>
+
+      <h2>My recommendation: start with one category</h2>
+      <p>Rather than forecasting every store and channel at once, I propose a <strong>single-category pilot</strong> — homewares is a strong candidate (fewer style variants than fashion, more stable demand). We prove the data pipeline and the forecast quality on a contained footprint, then scale.</p>
+      <ul>
+        <li>Limits the blast radius of a bad forecast while we tune.</li>
+        <li>Lets us measure real uplift before committing the rollout tranche.</li>
+        <li>Forces the product-master cleanup on a manageable slice first.</li>
+      </ul>
+
+      <div class="callout note"><strong>Note:</strong> Realistic timeline to company-wide value is <strong>9–12 months</strong>, not the 6 quoted in early planning. The pilot itself is ~3 months. I would rather set this expectation now than miss a date later.</div>
+
+      <p>Happy to walk through the SKU-mapping numbers with Marcus's team whenever suits.</p>
+
+      <p class="signature">— Dr. Priya Sharma, Head of Data &amp; Analytics</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

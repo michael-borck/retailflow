@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy POS &amp; Inventory Systems — IT Note | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Legacy POS &amp; Inventory Systems — Integration Feasibility</h1>
+      <p class="meta-line">IT Note · Office of the CIO · 24 February 2026</p>
+      <span class="doc-tag">Initiative: Inventory Optimisation</span>
+      <span class="doc-tag">Author: M. Kim</span>
+    </div>
+
+    <div class="doc-body">
+      <p><strong>To:</strong> Dr. Priya Sharma, Inventory Optimisation working group<br>
+      <strong>From:</strong> Marcus Kim, Chief Information Officer</p>
+
+      <p>Priya asked IT for a frank assessment of what our legacy estate can and cannot feed an AI forecasting platform. Short version: the data exists, but getting it out cleanly and frequently enough is the hard part.</p>
+
+      <h2>The estate</h2>
+      <table>
+        <tr><th>System</th><th>Vendor / age</th><th>Integration surface</th></tr>
+        <tr><td>Point of Sale</td><td>RetailMaster, deployed 2014</td><td>No public API; nightly flat-file export only</td></tr>
+        <tr><td>Inventory / stock control</td><td>StockTrak, deployed 2011</td><td>Direct DB read possible; no documented schema</td></tr>
+        <tr><td>Purchasing</td><td>Mix of StockTrak + spreadsheets</td><td>Largely manual</td></tr>
+        <tr><td>Online</td><td>Shopify Plus</td><td>Full REST/GraphQL API — no concerns</td></tr>
+      </table>
+
+      <h2>What is feasible</h2>
+      <ul>
+        <li><strong>Read access</strong> to StockTrak via a nightly replicated copy — doable in weeks. We will not query the production database directly; it cannot take the load.</li>
+        <li><strong>POS sales history</strong> via the existing flat-file export, landed into a staging area. Workable, but it is yesterday's data, not live.</li>
+        <li><strong>Shopify</strong> integration is trivial and already partly built.</li>
+      </ul>
+
+      <h2>What is not feasible (without significant work)</h2>
+      <ul>
+        <li><strong>Real-time store stock.</strong> RetailMaster only emits a batch file overnight. Intraday stock movements are invisible until the next morning. Replenishment logic must tolerate a 24-hour lag.</li>
+        <li><strong>Clean joins across systems.</strong> StockTrak and the POS use different SKU formats and there is no shared product key. Reconciliation is a project in itself, not a config setting.</li>
+        <li><strong>Writing back</strong> automated reorder suggestions into StockTrak. The vendor is end-of-support; we would build a fragile integration. Initial pilot should surface suggestions to humans, not auto-commit.</li>
+      </ul>
+
+      <div class="callout warn"><strong>Caution:</strong> StockTrak is out of vendor support as of mid-2024. Any extraction we build is unsupported and undocumented. We have one person, Raj Patel, who knows its schema; that is a key-person risk.</div>
+
+      <div class="callout note"><strong>Note:</strong> I support Priya's single-category pilot. It lets us validate the nightly extraction and SKU reconciliation on a small slice before we attempt anything estate-wide. A full POS replacement is a separate, larger conversation for FY27.</div>
+
+      <p>IT can have the StockTrak replica and a Shopify feed standing in a staging environment within roughly six weeks of go-ahead.</p>
+
+      <p class="signature">— Marcus Kim, Chief Information Officer</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

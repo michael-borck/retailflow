@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data-Readiness Note — Customer-Service Chatbot | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Data-Readiness Note — Customer-Service Chatbot</h1>
+      <p class="meta-line">Assessment · Data &amp; Analytics · 11 February 2026</p>
+      <span class="doc-tag">Initiative: Customer-Service Chatbot</span>
+      <span class="doc-tag">Author: Dr. Priya Sharma</span>
+    </div>
+
+    <div class="doc-body">
+      <p><strong>To:</strong> Marcus Kim (CIO)<br>
+      <strong>From:</strong> Dr. Priya Sharma (Head of Data &amp; Analytics)<br>
+      <strong>Re:</strong> Honest read on data readiness before we commit the build</p>
+
+      <p>Marcus — you asked for the unvarnished version, so here it is. Of the four funded AI initiatives, the chatbot sits on <strong>the best data foundation we have</strong>. I'm comfortable proceeding with confidence and I think the six-month estimate is realistic. But "best foundation" is relative, and there are three things I want on the record before we lock scope.</p>
+
+      <h2>What is genuinely good</h2>
+      <p>Our conversation and transcript data is strong. We have roughly <strong>2.3 years of Zendesk history — about 214,000 resolved tickets</strong> — plus live-chat logs from the Shopify Plus storefront. This is clean, well-structured, and richly labelled by query type. It is exactly the corpus you want for understanding intent, tone, and the long tail of how customers actually phrase things. This is why the chatbot scored higher than the other three initiatives.</p>
+
+      <h2>What worries me</h2>
+      <p>The bot is only as trustworthy as what we ground it in, and our ground truth is in poor shape.</p>
+      <ul>
+        <li><strong>Policy documents are scattered and inconsistent.</strong> The returns policy alone exists in at least four places — the website footer, an in-store laminated card, a 2022 PDF on the intranet, and the Zendesk macro library — and they do <em>not</em> all say the same thing. The macro library still references a 14-day change-of-mind window we retired in 2024.</li>
+        <li><strong>Sizing and fit knowledge lives in people's heads.</strong> Agents know that a particular denim brand runs a size small and that the homewares "king" quilt fits an Australian king, not a US one. None of this is written down anywhere a model can read.</li>
+        <li><strong>Returns exceptions are undocumented.</strong> The discretionary calls Tom's senior agents make daily — extending a window for a loyal customer, accepting a faulty sale item — are real policy in practice but exist nowhere in our systems.</li>
+      </ul>
+
+      <div class="callout risk"><strong>Risk:</strong> Because this is customer-facing, a confident-but-wrong answer is a live risk, not a theoretical one. If the bot quotes a retired returns window, that is a published consumer commitment we may have to honour. Grounding it in a single, current, authoritative policy set is the critical path — more than the model choice or the vendor.</div>
+
+      <p>Recommendation: proceed, but make "consolidate and ratify one canonical policy source" a funded work-stream in its own right, owned jointly with Tom, before we expose the bot beyond the pilot.</p>
+
+      <p class="signature">— Dr. Priya Sharma, Head of Data &amp; Analytics</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

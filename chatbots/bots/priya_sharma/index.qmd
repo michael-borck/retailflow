@@ -24,10 +24,14 @@ Priya provides honest assessments of AI feasibility and timelines, serving as a 
 ## Chat with Priya
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="a4167dfd-7dfb-40f1-a914-7e2934f5d89f"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="Dr. Priya Sharma"
+  data-greeting="Hi, I'm Priya, Head of Data & Analytics. Ask me about data readiness, feasibility and realistic timelines for RetailFlow's funded AI initiatives."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with Priya.</em></p>
 ```
 
 ::: {.callout-note}

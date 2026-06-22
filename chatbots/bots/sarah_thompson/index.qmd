@@ -24,10 +24,14 @@ Sarah is the voice of the 2,000+ employees in the boardroom, advocating for real
 ## Chat with Sarah
 
 ```{=html}
-<div id="chat-container">
-  <p><em>Chatbot loading...</em></p>
-  <!-- AnythingLLM embed will go here -->
-</div>
+<script
+  data-embed-id="7ad4df81-e33e-4f5d-bb32-7753f5eaf0a8"
+  data-base-api-url="https://chat.eduserver.au/api/embed"
+  data-assistant-name="Sarah Thompson"
+  data-greeting="Hi, I'm Sarah, COO. Ask me about store operations, rollout and the operational reality of RetailFlow's AI initiatives."
+  src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
+</script>
+<p><em>Click the chat button (bottom-right) to talk with Sarah.</em></p>
 ```
 
 ::: {.callout-note}

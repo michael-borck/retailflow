@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data-Readiness Note — Dynamic Pricing | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Data-Readiness Assessment — Dynamic Pricing Optimisation</h1>
+      <p class="meta-line">Technical Note · Data &amp; Analytics · 24 February 2026</p>
+      <span class="doc-tag">Initiative: Dynamic Pricing Optimisation</span>
+      <span class="doc-tag">Author: P. Sharma</span>
+    </div>
+
+    <div class="doc-body">
+      <p><strong>To:</strong> David Chen (CFO), Marcus Kim (CIO)<br>
+      <strong>From:</strong> Dr. Priya Sharma, Head of Data &amp; Analytics<br>
+      <strong>Re:</strong> What our data can and cannot support before we contract a pricing engine</p>
+
+      <p>I support the initiative. I want to be equally clear about where our data stands today, because pricing is precise and high-stakes — an automated wrong price is public, instant, and can read as either gouging or a margin-destroying error. We should not contract a vendor on the assumption that our data is ready, because it is not.</p>
+
+      <h2>1. We lack a clean competitor price feed</h2>
+      <p>Effective dynamic pricing on a fashion and homewares assortment depends heavily on knowing where competitors sit. We do not have this. We have ad-hoc manual price checks done by category buyers — patchy, inconsistent, and weeks stale. There is no automated, structured, matched feed of competitor prices against our SKUs.</p>
+      <div class="callout risk">
+        <strong>Critical gap:</strong> any vendor that claims strong results "with a competitor feed" is describing a feed we do not own. Acquiring and maintaining a matched competitor price feed is a separate cost and project — likely $80–120K/yr in data subscriptions plus matching effort. This is not in the $850K and must be planned explicitly.
+      </div>
+
+      <h2>2. Demand signals are split across online and store</h2>
+      <p>Our online demand data (Shopify Plus) is clean and granular. Our in-store demand data sits in a 10–15 year old POS and inventory stack and is coarse, batch-loaded overnight, and not reliably joined to the same SKU and customer keys.</p>
+      <table>
+        <tr><th>Signal</th><th>Online</th><th>Store (legacy POS)</th></tr>
+        <tr><td>Granularity</td><td>Per-event, real-time</td><td>Daily batch, aggregated</td></tr>
+        <tr><td>SKU keying</td><td>Consistent</td><td>~14% mismatch / unmapped</td></tr>
+        <tr><td>Price elasticity history</td><td>Usable</td><td>Sparse, unreliable</td></tr>
+      </table>
+      <p>A model trained mostly on online behaviour will mis-price in stores, which are still ~65% of revenue. Reconciling these two worlds is foundational work, not a configuration step.</p>
+
+      <h2>3. Backtest performance is not live performance</h2>
+      <div class="callout warn">
+        <strong>Read this before you read any vendor backtest:</strong> a backtest replays a pricing policy against history that already happened. It cannot observe how customers and competitors would have <em>reacted</em> to prices we never actually set. Backtests almost always overstate gains. I would discount any backtested margin figure heavily until we have run a live, guard-railed pilot on a narrow category.
+      </div>
+
+      <h2>Recommendation</h2>
+      <ol>
+        <li>Sequence a competitor-feed acquisition project before, not after, engine selection.</li>
+        <li>Fund the online/store data reconciliation as a named workstream.</li>
+        <li>Treat any vendor backtest as marketing until validated on a live, capped pilot.</li>
+        <li>Plan for 12+ months to a credible, trusted rollout. The Board's "this year" margin expectation is not realistic at full scope.</li>
+      </ol>
+
+      <p class="signature">— Dr. Priya Sharma, Head of Data &amp; Analytics</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection — Data & Approach Note | RetailFlow Internal</title>
+  <link rel="stylesheet" href="../doc-style.css">
+</head>
+<body>
+  <header class="doc-header">
+    <a href="../../internal.html" class="back">← Internal Portal</a>
+    <span class="brand">RetailFlow Internal</span>
+    <span class="classification internal">INTERNAL</span>
+  </header>
+
+  <main class="doc">
+    <div class="doc-meta">
+      <h1>Fraud Detection — Data &amp; Approach Note</h1>
+      <p class="meta-line">Advisory Note · Data &amp; Analytics · 19 February 2026</p>
+      <span class="doc-tag">Initiative: Fraud Detection</span>
+      <span class="doc-tag">Author: P. Sharma</span>
+    </div>
+
+    <div class="doc-body">
+      <p><strong>To:</strong> Marcus Kim (CIO), David Chen (CFO)<br>
+      <strong>From:</strong> Dr. Priya Sharma, Head of Data &amp; Analytics</p>
+
+      <p>Marcus asked for my honest read on how we deliver the fraud capability the Board funded. Here it is, plainly.</p>
+
+      <h2>Recommendation: buy, don't build</h2>
+      <p>I do not recommend my team build a fraud model. A credible third-party fraud platform is more practical for us, and I'd expect a sensible vendor to be integrated and live in <strong>three to six months</strong>. Building our own would take far longer, would require us to chase a moving target (fraud patterns shift constantly), and would tie up the same four data scientists I need for demand forecasting and personalisation.</p>
+
+      <div class="callout note"><strong>Note:</strong> "Buy" is the right call <em>and</em> the data-science team should not own the running of this. Fraud detection is an operational, always-on control. It belongs with Risk/Operations with vendor support, not in an analytics backlog.</div>
+
+      <h2>Is our data good enough? Yes — for a vendor</h2>
+      <p>Our Shopify Plus order data is clean and well-structured: order value, device and IP signals, billing/shipping mismatch, customer tenure, payment method. That is more than adequate to feed a mature vendor model. The legacy POS and inventory systems are poor, but in-store card-present fraud is a smaller exposure, so the data gap there is not blocking. We do <strong>not</strong> have enough labelled fraud history to train a competitive model ourselves — another reason buy wins.</p>
+
+      <h2>Where the real risk lives</h2>
+      <p>The hard part of this project is not the algorithm. It is <strong>threshold tuning and vendor oversight</strong>. Any fraud system makes two kinds of mistake, and they pull in opposite directions:</p>
+      <table>
+        <tr><th>Error type</th><th>What happens</th><th>Cost</th></tr>
+        <tr><td>False positive</td><td>A legitimate customer is blocked or held</td><td>Lost sale, angry customer, reputational harm — and we rarely even measure it</td></tr>
+        <tr><td>False negative</td><td>Genuine fraud slips through</td><td>Chargeback, lost goods, fees</td></tr>
+      </table>
+      <p>Tighten the threshold to catch more fraud and you block more good customers; loosen it and fraud rises. There is no single "correct" setting — it is a business trade-off about how much legitimate revenue we are willing to risk to avoid a dollar of fraud. That decision must be owned by us, not delegated to a vendor's default.</p>
+
+      <div class="callout risk"><strong>Risk:</strong> Any vendor benchmark quoting a single accuracy figure is hiding this trade-off. Before signing anything, insist on the false-positive rate <em>at the threshold they'd actually run us at</em>, measured on data like ours — not a headline number.</div>
+
+      <h2>What I'd ask the team to own</h2>
+      <ul>
+        <li>Defining and instrumenting the false-positive rate so we can actually see it.</li>
+        <li>Setting and reviewing thresholds with Finance and Customer Service in the room.</li>
+        <li>Ongoing oversight of vendor performance — not building the model.</li>
+      </ul>
+
+      <p class="signature">— Dr. Priya Sharma, Head of Data &amp; Analytics</p>
+    </div>
+  </main>
+
+  <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
+</body>
+</html>
