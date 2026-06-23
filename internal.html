@@ -319,14 +319,22 @@
 
     <!-- Portal Content (Hidden until authenticated) -->
     <div id="portal-content">
+        <div class="internal-banner">🔒 <strong>Internal workspace</strong> — RetailFlow project team &amp; authorised consultants. <a href="index.html" style="color:#fff;text-decoration:underline;">Public site →</a></div>
         <header>
-            <nav>
-                <a href="index.html" class="logo">RetailFlow Internal</a>
-                <div class="nav-right">
-                    <span style="color: #666; font-size: 0.9rem;">👤 Staff Access</span>
-                    <button class="btn-logout" onclick="logout()">Logout</button>
-                </div>
-            </nav>
+            <div class="container">
+                <nav>
+                    <a href="index.html" class="logo">RetailFlow</a>
+                    <ul class="nav-links">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="customer-service.html">Support</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <div class="nav-right">
+                        <span class="internal-badge">👤 Consultant access</span>
+                        <button class="btn btn-secondary" onclick="logout()">Log out</button>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <div class="container">
@@ -339,47 +347,40 @@
                 <strong>📋 For Masterclass Participants:</strong> This portal holds RetailFlow's internal documents for the four funded AI initiatives, plus company-wide records. <strong>Not everything here is relevant to your project</strong> — part of the job is working out which documents matter, which are out of date, and which are noise. Start with your initiative's folder, but read widely.
             </div>
 
-            <style>
-                .repo-card ul { list-style: none; margin: 0; padding: 0; }
-                .repo-card li { border-bottom: 1px solid var(--border); }
-                .repo-card li:last-child { border-bottom: none; }
-                .repo-card li a { display: block; padding: 0.6rem 0.25rem; color: var(--text);
-                    text-decoration: none; font-size: 0.92rem; background: none; border-radius: 0; }
-                .repo-card li a:hover { background: var(--light); color: var(--primary-dark); padding-left: 0.6rem; }
-                .repo-card .budget { float: right; color: #9ca3af; font-size: 0.8rem; font-weight: 600; }
-                .repo-card .kind { color: #9ca3af; font-size: 0.78rem; }
-            </style>
+            <details class="acc green" open>
+                <summary>💬 Talk to the RetailFlow team</summary>
+                <div class="acc-body">
+                    <p>The people closest to this work. Interview them to scope, stress-test and pressure-check your delivery plan — they have opinions, and they won't always agree.</p>
+                    <ul>
+                        <li><a href="chatbots/bots/emma_rodriguez/index.html">Emma Rodriguez <span class="kind">· Managing Director</span></a></li>
+                        <li><a href="chatbots/bots/david_chen/index.html">David Chen <span class="kind">· Chief Financial Officer</span></a></li>
+                        <li><a href="chatbots/bots/marcus_kim/index.html">Marcus Kim <span class="kind">· Chief Information Officer</span></a></li>
+                        <li><a href="chatbots/bots/priya_sharma/index.html">Dr. Priya Sharma <span class="kind">· Head of Data &amp; Analytics</span></a></li>
+                        <li><a href="chatbots/bots/sarah_thompson/index.html">Sarah Thompson <span class="kind">· Chief Operating Officer</span></a></li>
+                        <li><a href="chatbots/bots/tom_walsh/index.html">Tom Walsh <span class="kind">· Customer Service Manager</span></a></li>
+                        <li><a href="chatbots/bots/lisa_nguyen/index.html">Lisa Nguyen <span class="kind">· General Manager, Customer Experience</span></a></li>
+                    </ul>
+                </div>
+            </details>
 
-            <div class="dashboard-card repo-card" style="border-left-color: var(--secondary); margin-bottom: 1.5rem;">
-                <h3 style="color: var(--secondary);">💬 Talk to the RetailFlow team</h3>
-                <p>The people closest to this work. Interview them to scope, stress-test and pressure-check your delivery plan — they have opinions, and they won't always agree.</p>
-                <ul>
-                    <li><a href="chatbots/bots/emma_rodriguez/index.html">Emma Rodriguez <span class="kind">· Managing Director</span></a></li>
-                    <li><a href="chatbots/bots/david_chen/index.html">David Chen <span class="kind">· Chief Financial Officer</span></a></li>
-                    <li><a href="chatbots/bots/marcus_kim/index.html">Marcus Kim <span class="kind">· Chief Information Officer</span></a></li>
-                    <li><a href="chatbots/bots/priya_sharma/index.html">Dr. Priya Sharma <span class="kind">· Head of Data &amp; Analytics</span></a></li>
-                    <li><a href="chatbots/bots/sarah_thompson/index.html">Sarah Thompson <span class="kind">· Chief Operating Officer</span></a></li>
-                    <li><a href="chatbots/bots/tom_walsh/index.html">Tom Walsh <span class="kind">· Customer Service Manager</span></a></li>
-                    <li><a href="chatbots/bots/lisa_nguyen/index.html">Lisa Nguyen <span class="kind">· General Manager, Customer Experience</span></a></li>
-                </ul>
-            </div>
+            <details class="acc accent">
+                <summary>🏢 Company-wide documents</summary>
+                <div class="acc-body">
+                    <p>Background that may apply to any initiative — read critically.</p>
+                    <ul>
+                        <li><a href="documents/company/company-fact-sheet.html">Company fact sheet <span class="kind">· reference</span></a></li>
+                        <li><a href="documents/company/org-chart.html">Leadership org chart &amp; team structure <span class="kind">· reference</span></a></li>
+                        <li><a href="documents/company/it-systems-overview.html">IT &amp; data systems overview <span class="kind">· reference</span></a></li>
+                        <li><a href="documents/company/ai-principles-draft.html">Responsible AI principles <span class="kind">· draft policy</span></a></li>
+                        <li><a href="documents/company/all-staff-newsletter-feb2026.html">The RetailFlow Buzz — staff newsletter <span class="kind">· Feb 2026</span></a></li>
+                        <li><a href="documents/company/strategy-offsite-notes-2024.html">Strategy offsite notes <span class="kind">· offsite minutes</span></a></li>
+                    </ul>
+                </div>
+            </details>
 
-            <div class="dashboard-card repo-card" style="border-left-color: var(--accent); margin-bottom: 1.5rem;">
-                <h3 style="color: var(--accent);">🏢 Company-wide documents</h3>
-                <p>Background that may apply to any initiative — read critically.</p>
-                <ul>
-                    <li><a href="documents/company/company-fact-sheet.html">Company fact sheet <span class="kind">· reference</span></a></li>
-                    <li><a href="documents/company/org-chart.html">Leadership org chart &amp; team structure <span class="kind">· reference</span></a></li>
-                    <li><a href="documents/company/it-systems-overview.html">IT &amp; data systems overview <span class="kind">· reference</span></a></li>
-                    <li><a href="documents/company/ai-principles-draft.html">Responsible AI principles <span class="kind">· draft policy</span></a></li>
-                    <li><a href="documents/company/all-staff-newsletter-feb2026.html">The RetailFlow Buzz — staff newsletter <span class="kind">· Feb 2026</span></a></li>
-                    <li><a href="documents/company/strategy-offsite-notes-2024.html">Strategy offsite notes <span class="kind">· offsite minutes</span></a></li>
-                </ul>
-            </div>
-
-            <div class="dashboard-grid">
-                <div class="dashboard-card repo-card">
-                    <h3>💬 Customer-service chatbot <span class="budget">$450K</span></h3>
+            <details class="acc">
+                <summary>💬 Customer-service chatbot <span class="budget">$450K</span></summary>
+                <div class="acc-body">
                     <ul>
                         <li><a href="documents/chatbot/board-memo-chatbot.html">Board funding memo</a></li>
                         <li><a href="documents/chatbot/cs-data-profile.html">Data readiness profile</a></li>
@@ -389,9 +390,11 @@
                         <li><a href="#dashboard" onclick="showDashboard(); return false;">📊 AI pilot dashboard (Week 6)</a></li>
                     </ul>
                 </div>
+            </details>
 
-                <div class="dashboard-card repo-card">
-                    <h3>🏷️ Dynamic pricing <span class="budget">$850K</span></h3>
+            <details class="acc">
+                <summary>🏷️ Dynamic pricing <span class="budget">$850K</span></summary>
+                <div class="acc-body">
                     <ul>
                         <li><a href="documents/pricing/board-memo-pricing.html">Board funding memo</a></li>
                         <li><a href="documents/pricing/pricing-data-profile.html">Data readiness profile</a></li>
@@ -400,9 +403,11 @@
                         <li><a href="documents/pricing/strategy-memo-2023.html">Strategy memo on pricing</a></li>
                     </ul>
                 </div>
+            </details>
 
-                <div class="dashboard-card repo-card">
-                    <h3>📦 Inventory optimisation <span class="budget">$1.1M</span></h3>
+            <details class="acc">
+                <summary>📦 Inventory optimisation <span class="budget">$1.1M</span></summary>
+                <div class="acc-body">
                     <ul>
                         <li><a href="documents/inventory/board-memo-inventory.html">Board funding memo</a></li>
                         <li><a href="documents/inventory/inventory-data-profile.html">Data readiness profile</a></li>
@@ -411,9 +416,11 @@
                         <li><a href="documents/inventory/warehouse-ops-email.html">Warehouse operations email</a></li>
                     </ul>
                 </div>
+            </details>
 
-                <div class="dashboard-card repo-card">
-                    <h3>🛡️ Fraud detection <span class="budget">$650K</span></h3>
+            <details class="acc">
+                <summary>🛡️ Fraud detection <span class="budget">$650K</span></summary>
+                <div class="acc-body">
                     <ul>
                         <li><a href="documents/fraud/board-memo-fraud.html">Board funding memo</a></li>
                         <li><a href="documents/fraud/fraud-data-profile.html">Data readiness profile</a></li>
@@ -422,7 +429,7 @@
                         <li><a href="documents/fraud/finance-team-email.html">Finance team email</a></li>
                     </ul>
                 </div>
-            </div>
+            </details>
 
             <div id="dashboard-iframe">
                 <h2 style="margin-bottom: 1rem; color: var(--primary);">📊 AI Pilot Performance Dashboard</h2>
@@ -442,8 +449,8 @@
                 document.getElementById('login-gate').style.display = 'none';
                 // Show portal content
                 document.getElementById('portal-content').style.display = 'block';
-                // Store auth in session
-                sessionStorage.setItem('authenticated', 'true');
+                // Grant access for 24 hours
+                localStorage.setItem('rf_access_expiry', String(Date.now() + 24 * 60 * 60 * 1000));
             } else {
                 // Show error
                 errorMsg.style.display = 'block';
@@ -461,7 +468,7 @@
 
         // Logout function
         function logout() {
-            sessionStorage.removeItem('authenticated');
+            localStorage.removeItem('rf_access_expiry');
             document.getElementById('login-gate').style.display = 'flex';
             document.getElementById('portal-content').style.display = 'none';
             document.getElementById('access-code').value = '';
@@ -617,6 +624,40 @@ ${document.querySelector('style').textContent}
         @media (max-width: 900px) {
             .column-2 { grid-template-columns: 1fr; }
         }
+    </style>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="storefront.css">
+    <style>
+        /* Internal area inherits the public storefront look (storefront.css);
+           these tweaks add the consultant-access banner + mobile accordions. */
+        #portal-content .container { max-width: 1024px; }
+        .internal-banner { background: #0f172a; color: #fff; font-size: 0.85rem;
+            text-align: center; padding: 0.5rem 1rem; }
+        .internal-banner strong { color: #fbbf24; }
+        .internal-badge { color: #475569; font-size: 0.85rem; font-weight: 600; margin-right: 0.5rem; }
+        .page-header { margin-top: 2rem; }
+
+        details.acc { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--primary);
+            border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); overflow: hidden; }
+        details.acc.green  { border-left-color: var(--secondary); }
+        details.acc.accent { border-left-color: var(--accent); }
+        details.acc > summary { cursor: pointer; padding: 1rem 1.25rem; font-weight: 700; color: var(--dark);
+            list-style: none; display: flex; align-items: center; gap: 0.5rem; }
+        details.acc > summary::-webkit-details-marker { display: none; }
+        details.acc > summary .budget { margin-left: auto; color: #9ca3af; font-size: 0.8rem; font-weight: 600; }
+        details.acc > summary::after { content: "⌄"; margin-left: 0.4rem; color: #9ca3af; font-size: 1.3rem;
+            line-height: 1; transition: transform 0.2s; }
+        details.acc[open] > summary::after { transform: rotate(180deg); }
+        details.acc > summary:hover { background: var(--light); }
+        .acc-body { padding: 0.25rem 1.25rem 0.75rem; }
+        .acc-body > p { color: #6b7280; font-size: 0.9rem; margin: 0 0 0.5rem; }
+        .acc-body ul { list-style: none; margin: 0; padding: 0; }
+        .acc-body li { border-bottom: 1px solid var(--border); }
+        .acc-body li:last-child { border-bottom: none; }
+        .acc-body li a { display: block; padding: 0.6rem 0.25rem; color: var(--text);
+            text-decoration: none; font-size: 0.92rem; }
+        .acc-body li a:hover { background: var(--light); color: var(--primary-dark); padding-left: 0.6rem; }
+        .acc-body .kind { color: #9ca3af; font-size: 0.78rem; }
     </style>
 </head>
 <body>
@@ -934,11 +975,14 @@ ${document.querySelector('style').textContent}
             dashboardDiv.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Check if already authenticated on page load
+        // Restore access if granted within the last 24 hours
         window.addEventListener('DOMContentLoaded', function() {
-            if (sessionStorage.getItem('authenticated') === 'true') {
+            const expiry = parseInt(localStorage.getItem('rf_access_expiry') || '0', 10);
+            if (expiry > Date.now()) {
                 document.getElementById('login-gate').style.display = 'none';
                 document.getElementById('portal-content').style.display = 'block';
+            } else {
+                localStorage.removeItem('rf_access_expiry');
             }
         });
     </script>
