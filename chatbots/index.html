@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../favicon.svg" rel="icon" type="image/svg+xml">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -133,6 +134,14 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../chatbots/styles.css">
+<meta property="og:title" content="Meet the Team – RetailFlow">
+<meta property="og:description" content="Chat with RetailFlow’s leadership — pick someone to talk to">
+<meta property="og:image" content="https://retailflow.eduserver.au/chatbots/bots/emma_rodriguez/image.webp">
+<meta property="og:site_name" content="RetailFlow">
+<meta name="twitter:title" content="Meet the Team – RetailFlow">
+<meta name="twitter:description" content="Chat with RetailFlow’s leadership — pick someone to talk to">
+<meta name="twitter:image" content="https://retailflow.eduserver.au/chatbots/bots/emma_rodriguez/image.webp">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -432,7 +441,7 @@ Customer Service Manager
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/retailflow\.eduserver\.au\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -6,6 +6,11 @@ project:
 
 website:
   title: "RetailFlow"
+  site-url: "https://retailflow.eduserver.au/"
+  favicon: favicon.svg
+  image: og-image.png
+  open-graph: true
+  twitter-card: true
   navbar:
     background: "#2563eb"
     foreground: "#FFFFFF"
