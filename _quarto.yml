@@ -28,3 +28,4 @@ format:
     theme: cosmo
     css: chatbots/styles.css
     toc: true
+    include-after-body: disclaimer.html
