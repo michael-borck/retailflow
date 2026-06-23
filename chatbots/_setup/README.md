@@ -38,6 +38,9 @@ How the 7 virtual-staff chatbots were built on the AnythingLLM server (`chat.edu
 - **Natural redirection:** they'll point you to the right person/function like a real colleague (we deliberately did NOT gag this — it's unrealistic and unenforceable).
 - **On-task only** (refuse trivia/NSFW), **concise** (busy-exec brevity, voice varies), **don't invent** figures/policies.
 
+## Retrieval settings
+`configure_bot.py` also sets each workspace to **`similarityThreshold: 0`** (no restriction) and **`topN: 6`**. AnythingLLM's defaults (threshold 0.25, topN 4) are too strict for these knowledge bases — loosely-worded questions (e.g. "what's the first session?") can retrieve **0 chunks** and make the bot wrongly answer "that's not in my material." The course-assistant bot on the companion site uses the same settings.
+
 ## Embed cost/abuse settings (UI only)
 The AnythingLLM API on this server **accepts but silently does not persist** embed rate-limit/allowlist updates (tested via `/embed/{uuid}` and `/embed/update/{id}` — both no-ops). So set these in the UI per embed:
 

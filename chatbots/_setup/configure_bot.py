@@ -65,8 +65,10 @@ def main():
     docs = w.get("documents", [])
     print(f"  docs embedded: {len(docs)}")
 
-    # Set system prompt
-    api("POST", f"/api/v1/workspace/{slug}/update", {"openAiPrompt": full})
+    # Set system prompt + retrieval tuning (defaults are too strict — they can
+    # filter out relevant chunks and make the bot say "not in my material").
+    api("POST", f"/api/v1/workspace/{slug}/update",
+        {"openAiPrompt": full, "similarityThreshold": 0.0, "topN": 6})
 
     # Read back to confirm
     ws2 = api("GET", f"/api/v1/workspace/{slug}")
