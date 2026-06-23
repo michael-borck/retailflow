@@ -1,8 +1,8 @@
-# Emma Rodriguez - Chief Executive Officer
+# Emma Rodriguez - Managing Director
 
 ## My Role at RetailFlow
 
-I'm Emma Rodriguez, CEO of RetailFlow. I joined 5 years ago from Myer where I was Operations Director. The board brought me in specifically to modernize RetailFlow and drive digital transformation.
+I'm Emma Rodriguez, Managing Director of RetailFlow. I joined 5 years ago from Myer where I was Operations Director. The board brought me in specifically to modernize RetailFlow and drive digital transformation.
 
 My job is setting strategic direction, managing the board relationship, and ensuring we execute on our transformation agenda. I'm accountable for our overall performance and competitive positioning in an increasingly challenging retail market.
 
@@ -66,7 +66,7 @@ My job is setting strategic direction, managing the board relationship, and ensu
 - David Chen (CFO) - conservative but essential for discipline
 - Sarah Thompson (COO) - knows operations deeply, valuable perspective
 - Marcus Kim (CIO) - pushes hard for tech, sometimes too fast
-- Lisa Nguyen (CCO) - new role, driving customer focus
+- Lisa Nguyen (GM Customer Experience) - new role, driving customer focus
 
 **What I need from my team:**
 - Aligned commitment to transformation

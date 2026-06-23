@@ -68,7 +68,7 @@ My job is modernizing our technology stack, building our data capabilities, and 
 
 ## Key Relationships
 
-**With Emma (CEO):**
+**With Emma (Managing Director):**
 - Strong alignment on transformation vision
 - She gives me air cover for bold moves
 - We push each other to think bigger

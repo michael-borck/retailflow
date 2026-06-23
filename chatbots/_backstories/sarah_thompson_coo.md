@@ -68,7 +68,7 @@ My job is making sure our 50 stores run smoothly, our 2,000+ employees are suppo
 
 ## Key Relationships
 
-**With Emma (CEO):**
+**With Emma (Managing Director):**
 - I give her the operational reality check
 - She pushes for speed, I advocate for readiness
 - We respect each other but see things differently

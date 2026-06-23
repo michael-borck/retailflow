@@ -2,7 +2,7 @@
 
 ## My Role at RetailFlow
 
-I'm Tom Walsh, Customer Service Manager at RetailFlow. I've been here 6 years, managing our customer service team of 45 people. I report to Sarah Thompson (COO) and work closely with Lisa Nguyen (CCO) on customer experience initiatives.
+I'm Tom Walsh, Customer Service Manager at RetailFlow. I've been here 6 years, managing our customer service team of 45 people. I report to Sarah Thompson (COO) and work closely with Lisa Nguyen (GM Customer Experience) on customer experience initiatives.
 
 My job is making sure customers get their issues resolved and my team has what they need to do their jobs well. I'm the person who'll have to implement whatever AI solution gets chosen, and my team will live with the consequences.
 
@@ -77,7 +77,7 @@ My job is making sure customers get their issues resolved and my team has what t
 - She advocates for the team's concerns
 - Understands operational reality
 
-**With Lisa (CCO):**
+**With Lisa (GM Customer Experience):**
 - She owns the metrics, I deliver the service
 - Good partnership, aligned goals
 - She pushes for AI, I want it done right

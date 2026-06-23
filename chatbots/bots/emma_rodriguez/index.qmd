@@ -1,6 +1,6 @@
 ---
 title: "Emma Rodriguez"
-subtitle: "Chief Executive Officer"
+subtitle: "Managing Director"
 image: "image.webp"
 order: 1
 about:
@@ -10,7 +10,7 @@ about:
 
 ## About Emma
 
-Emma Rodriguez is CEO of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.
+Emma Rodriguez is Managing Director of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.
 
 Emma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness.
 
@@ -28,7 +28,7 @@ Emma is under pressure to deliver results on the transformation agenda while nav
   data-embed-id="6940470a-505f-4ea8-9ebc-acb1faa8ca6f"
   data-base-api-url="https://chat.eduserver.au/api/embed"
   data-assistant-name="Emma Rodriguez"
-  data-greeting="Hi, I'm Emma, CEO. Ask me about strategy, board expectations and priorities for our AI initiatives."
+  data-greeting="Hi, I'm Emma, Managing Director. Ask me about strategy, board expectations and priorities for our AI initiatives."
   src="https://chat.eduserver.au/embed/anythingllm-chat-widget.min.js">
 </script>
 <p><em>Click the chat button (bottom-right) to talk with Emma.</em></p>

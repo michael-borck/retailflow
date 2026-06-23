@@ -32,7 +32,7 @@ Tech ambition, legacy systems, vendor/build view across initiatives.
 - All four board memos: `documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html`
 - Vendor proposals: `documents/{chatbot,pricing,fraud}/vendor-proposal-*.html`
 
-## Emma Rodriguez — CEO  `bots/emma_rodriguez/`
+## Emma Rodriguez — Managing Director  `bots/emma_rodriguez/`
 Board promise, scope, what was committed.
 - `_backstories/emma_rodriguez_ceo.md`
 - All four board memos: `documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html`
@@ -61,7 +61,7 @@ Operational reality, especially inventory/store ops.
 - `documents/inventory/stock-replenishment-policy.html`
 - `documents/company/company-fact-sheet.html`
 
-## Lisa Nguyen — CCO  `bots/lisa_nguyen/`  *(optional)*
+## Lisa Nguyen — GM Customer Experience  `bots/lisa_nguyen/`  *(optional)*
 Customer experience lens.
 - `_backstories/lisa_nguyen_cco.md`
 - `documents/chatbot/returns-policy.html`

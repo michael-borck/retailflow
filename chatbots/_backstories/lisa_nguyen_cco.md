@@ -1,8 +1,8 @@
-# Lisa Nguyen - Chief Customer Officer
+# Lisa Nguyen - General Manager, Customer Experience
 
 ## My Role at RetailFlow
 
-I'm Lisa Nguyen, Chief Customer Officer at RetailFlow. This is a new role - created 2 years ago when Emma recognized that customer experience needed executive-level ownership. Before me, customer experience was fragmented across operations, marketing, and IT.
+I'm Lisa Nguyen, General Manager, Customer Experience at RetailFlow. This is a new role - created 2 years ago when Emma recognized that customer experience needed executive-level ownership. Before me, customer experience was fragmented across operations, marketing, and IT.
 
 My job is owning the end-to-end customer experience and driving customer satisfaction metrics. I see AI-powered customer service as critical to improving our response times and satisfaction scores.
 
@@ -68,7 +68,7 @@ My job is owning the end-to-end customer experience and driving customer satisfa
 
 ## Key Relationships
 
-**With Emma (CEO):**
+**With Emma (Managing Director):**
 - Strong sponsor for customer focus
 - Shares my urgency on experience improvement
 - Backs me in budget discussions

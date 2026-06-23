@@ -28,8 +28,8 @@
     "text": "Tech ambition, legacy systems, vendor/build view across initiatives. - _backstories/marcus_kim_cio.md - documents/company/it-systems-overview.html - documents/inventory/legacy-systems-note.html - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - Vendor proposals: documents/{chatbot,pricing,fraud}/vendor-proposal-*.html"
   },
   {
-    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#emma-rodriguez-ceo-botsemma_rodriguez",
-    "href": "chatbots/DOC-TO-BOT-MAPPING.html#emma-rodriguez-ceo-botsemma_rodriguez",
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#emma-rodriguez-managing-director-botsemma_rodriguez",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#emma-rodriguez-managing-director-botsemma_rodriguez",
     "title": "Which documents go into which bot",
     "section": "",
     "text": "Board promise, scope, what was committed. - _backstories/emma_rodriguez_ceo.md - All four board memos: documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html - documents/company/company-fact-sheet.html - documents/company/ai-principles-draft.html"
@@ -56,8 +56,8 @@
     "text": "Operational reality, especially inventory/store ops. - _backstories/sarah_thompson_coo.md - documents/inventory/board-memo-inventory.html - documents/inventory/stock-replenishment-policy.html - documents/company/company-fact-sheet.html"
   },
   {
-    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#lisa-nguyen-cco-botslisa_nguyen-optional",
-    "href": "chatbots/DOC-TO-BOT-MAPPING.html#lisa-nguyen-cco-botslisa_nguyen-optional",
+    "objectID": "chatbots/DOC-TO-BOT-MAPPING.html#lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional",
+    "href": "chatbots/DOC-TO-BOT-MAPPING.html#lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional",
     "title": "Which documents go into which bot",
     "section": "",
     "text": "Customer experience lens. - _backstories/lisa_nguyen_cco.md - documents/chatbot/returns-policy.html - documents/company/company-fact-sheet.html"
@@ -130,14 +130,14 @@
     "href": "chatbots/bots/lisa_nguyen/index.html",
     "title": "Lisa Nguyen",
     "section": "",
-    "text": "Lisa Nguyen is Chief Customer Officer of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.\nLisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics."
+    "text": "Lisa Nguyen is General Manager, Customer Experience of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.\nLisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics."
   },
   {
     "objectID": "chatbots/bots/lisa_nguyen/index.html#about-lisa",
     "href": "chatbots/bots/lisa_nguyen/index.html#about-lisa",
     "title": "Lisa Nguyen",
     "section": "",
-    "text": "Lisa Nguyen is Chief Customer Officer of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.\nLisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics."
+    "text": "Lisa Nguyen is General Manager, Customer Experience of RetailFlow, a role created 2 years ago when Emma recognized that customer experience needed executive-level ownership. She joined from a telecommunications company where she led customer experience.\nLisa is a strong advocate for AI-powered customer service, seeing it as the fastest path to improving satisfaction metrics."
   },
   {
     "objectID": "chatbots/bots/lisa_nguyen/index.html#customer-focus",
@@ -186,21 +186,21 @@
     "href": "chatbots/index.html",
     "title": "Meet the Team",
     "section": "",
-    "text": "Engage with RetailFlow’s leadership team to understand their perspectives on AI transformation, digital strategy, and business operations.\nEach executive brings different priorities, concerns, and expertise. Use these conversations to:\n\nExplore stakeholder perspectives on AI initiatives\nPractice executive communication before key meetings\nUnderstand tensions between growth, cost, operations, and innovation\nTest your recommendations against different viewpoints\n\n\n\n\n\n\n\nNoteFor Executive Education Participants\n\n\n\nThese chatbots are designed to support your learning in AI Leadership and Business Innovation courses. The executives reflect realistic tensions found in organisations undergoing digital transformation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmma Rodriguez\n\n\nChief Executive Officer\n\n\n\n\n\n\n\n\n\n\n\n\nDavid Chen\n\n\nChief Financial Officer\n\n\n\n\n\n\n\n\n\n\n\n\nSarah Thompson\n\n\nChief Operating Officer\n\n\n\n\n\n\n\n\n\n\n\n\nMarcus Kim\n\n\nChief Information Officer\n\n\n\n\n\n\n\n\n\n\n\n\nLisa Nguyen\n\n\nChief Customer Officer\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Priya Sharma\n\n\nHead of Data & Analytics\n\n\n\n\n\n\n\n\n\n\n\n\nTom Walsh\n\n\nCustomer Service Manager\n\n\n\n\n\nNo matching items"
+    "text": "Engage with RetailFlow’s leadership team to understand their perspectives on AI transformation, digital strategy, and business operations.\nEach executive brings different priorities, concerns, and expertise. Use these conversations to:\n\nExplore stakeholder perspectives on AI initiatives\nPractice executive communication before key meetings\nUnderstand tensions between growth, cost, operations, and innovation\nTest your recommendations against different viewpoints\n\n\n\n\n\n\n\nNoteFor Executive Education Participants\n\n\n\nThese chatbots are designed to support your learning in AI Leadership and Business Innovation courses. The executives reflect realistic tensions found in organisations undergoing digital transformation.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEmma Rodriguez\n\n\nManaging Director\n\n\n\n\n\n\n\n\n\n\n\n\nDavid Chen\n\n\nChief Financial Officer\n\n\n\n\n\n\n\n\n\n\n\n\nSarah Thompson\n\n\nChief Operating Officer\n\n\n\n\n\n\n\n\n\n\n\n\nMarcus Kim\n\n\nChief Information Officer\n\n\n\n\n\n\n\n\n\n\n\n\nLisa Nguyen\n\n\nGeneral Manager, Customer Experience\n\n\n\n\n\n\n\n\n\n\n\n\nDr. Priya Sharma\n\n\nHead of Data & Analytics\n\n\n\n\n\n\n\n\n\n\n\n\nTom Walsh\n\n\nCustomer Service Manager\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "chatbots/bots/emma_rodriguez/index.html",
     "href": "chatbots/bots/emma_rodriguez/index.html",
     "title": "Emma Rodriguez",
     "section": "",
-    "text": "Emma Rodriguez is CEO of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.\nEmma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness."
+    "text": "Emma Rodriguez is Managing Director of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.\nEmma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness."
   },
   {
     "objectID": "chatbots/bots/emma_rodriguez/index.html#about-emma",
     "href": "chatbots/bots/emma_rodriguez/index.html#about-emma",
     "title": "Emma Rodriguez",
     "section": "",
-    "text": "Emma Rodriguez is CEO of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.\nEmma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness."
+    "text": "Emma Rodriguez is Managing Director of RetailFlow, joining 5 years ago from Myer where she was Operations Director. The board brought her in specifically to modernize RetailFlow and drive digital transformation.\nEmma is under pressure to deliver results on the transformation agenda while navigating the competing priorities of growth, profitability, and organizational readiness."
   },
   {
     "objectID": "chatbots/bots/emma_rodriguez/index.html#strategic-focus",

@@ -68,7 +68,7 @@ My job is protecting the financial health of the company. That means disciplined
 
 ## Key Relationships
 
-**With Emma (CEO):**
+**With Emma (Managing Director):**
 - Respect her vision, provide financial reality check
 - We debate, but ultimately align
 - My job is to say what others might not
