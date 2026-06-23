@@ -31,7 +31,22 @@
   --rf-maxw:1200px;
   --rf-font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   --rf-display:'Fraunces',Georgia,'Times New Roman',serif;
+  /* Legacy variable aliases — keep inline style="var(--primary)" etc. working
+     after the per-page inline <style> blocks were removed. Mapped to the
+     warm palette so old markup renders on-brand, not broken. */
+  --primary:#C25C3A;        /* was corporate blue -> terracotta brand */
+  --primary-dark:#A2492B;
+  --secondary:#5B8C5A;
+  --accent:#C77A2E;
+  --dark:#241F1A;
+  --light:#F3ECDF;
+  --white:#FFFFFF;
+  --text:#5C544C;
+  --border:#EAE1D3;
+  --warn:#B23A1E;
 }
+@keyframes slideIn { from { transform:translateY(-50px); opacity:0; } to { transform:translateY(0); opacity:1; } }
+#portal-content .container { max-width:1024px; }
 
 *{ box-sizing:border-box; }
 
@@ -221,6 +236,7 @@ main > .section:first-child{ padding-top:1rem; }
   background:linear-gradient(135deg,var(--rf-accent-soft) 0%, var(--rf-soft) 100%);
   display:flex; align-items:center; justify-content:center; font-size:3.4rem;
 }
+.card-image img{ width:100%; height:100%; object-fit:cover; display:block; }
 
 .features{ display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1.2rem; }
 .feature{ padding:1.5rem; text-align:left; background:var(--rf-surface); }
@@ -240,6 +256,7 @@ main > .section:first-child{ padding-top:1rem; }
   width:100%; height:180px; background:linear-gradient(135deg,var(--rf-soft),var(--rf-accent-soft));
   display:flex; align-items:center; justify-content:center; font-size:3rem;
 }
+.product-image img{ width:100%; height:100%; object-fit:cover; display:block; }
 .product-body{ padding:1rem 1.1rem 1.2rem; }
 .product-name{ font-weight:600; color:var(--rf-ink); margin-bottom:.3rem; }
 .product-price{ color:var(--rf-accent-dark); font-weight:700; font-size:1.1rem; }
@@ -406,7 +423,7 @@ details.acc > summary:hover{ background:var(--rf-bg); }
 .acc-body li a:hover{ color:var(--rf-accent-dark); padding-left:.7rem; }
 .acc-body .kind{ color:var(--rf-muted); font-size:.8rem; }
 
-#dashboard-iframe{ margin-top:2rem; }
+#dashboard-iframe{ display:none; margin-top:2rem; }
 #dashboard-iframe iframe{ width:100%; border:none; border-radius:var(--rf-radius); box-shadow:var(--rf-shadow); background:#fff; }
 
 /* ---------------------------------------------------------------------
