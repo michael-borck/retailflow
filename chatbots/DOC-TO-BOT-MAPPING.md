@@ -2,7 +2,7 @@
 
 Paint-by-numbers for tomorrow's AnythingLLM build. For each bot: the workspace name, the **system prompt** to paste, and the **knowledge documents** to load. Then create the embed and paste it into the bot's `index.qmd`.
 
-> **Upload method.** AnythingLLM ingests `.md` / `.html` / `.txt` natively, so the **simplest path is to upload these files directly in the AnythingLLM UI** (drag-drop into the workspace, then "Save & Embed"). `botstash` is great for LMS exports but its scanner **skips `.md`/`.html`** (only pdf/docx/pptx/vtt/qti/imscc), so to use botstash you'd first render these to PDF. For Friday, UI upload is the reliable route.
+> **Upload method.** botstash (>= 0.3.0) ingests `.md`/`.qmd`/`.html`/`.txt` directly, so each bot is built and refreshed with `botstash run <staging-folder> --workspace <slug> --reset` (clears the workspace, then re-uploads the cleaned docs). See `_setup/README.md`. (Earlier botstash versions skipped `.md`/`.html`; that no longer applies.)
 >
 > **System prompt** = the contents of that bot's `bots/<name>/prompt.txt` **plus** the DELIVERY MODE line from `ANYTHINGLLM_SETUP.md`. botstash does **not** set this; paste it in the workspace's chat settings.
 >
