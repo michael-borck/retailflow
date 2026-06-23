@@ -663,40 +663,6 @@ ${document.querySelector('style').textContent}
             .column-2 { grid-template-columns: 1fr; }
         }
     </style>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="stylesheet" href="storefront.css">
-    <style>
-        /* Internal area inherits the public storefront look (storefront.css);
-           these tweaks add the consultant-access banner + mobile accordions. */
-        #portal-content .container { max-width: 1024px; }
-        .internal-banner { background: #0f172a; color: #fff; font-size: 0.85rem;
-            text-align: center; padding: 0.5rem 1rem; }
-        .internal-banner strong { color: #fbbf24; }
-        .internal-badge { color: #475569; font-size: 0.85rem; font-weight: 600; margin-right: 0.5rem; }
-        .page-header { margin-top: 2rem; }
-
-        details.acc { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--primary);
-            border-radius: 10px; margin-bottom: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,.06); overflow: hidden; }
-        details.acc.green  { border-left-color: var(--secondary); }
-        details.acc.accent { border-left-color: var(--accent); }
-        details.acc > summary { cursor: pointer; padding: 1rem 1.25rem; font-weight: 700; color: var(--dark);
-            list-style: none; display: flex; align-items: center; gap: 0.5rem; }
-        details.acc > summary::-webkit-details-marker { display: none; }
-        details.acc > summary .budget { margin-left: auto; color: #9ca3af; font-size: 0.8rem; font-weight: 600; }
-        details.acc > summary::after { content: "⌄"; margin-left: 0.4rem; color: #9ca3af; font-size: 1.3rem;
-            line-height: 1; transition: transform 0.2s; }
-        details.acc[open] > summary::after { transform: rotate(180deg); }
-        details.acc > summary:hover { background: var(--light); }
-        .acc-body { padding: 0.25rem 1.25rem 0.75rem; }
-        .acc-body > p { color: #6b7280; font-size: 0.9rem; margin: 0 0 0.5rem; }
-        .acc-body ul { list-style: none; margin: 0; padding: 0; }
-        .acc-body li { border-bottom: 1px solid var(--border); }
-        .acc-body li:last-child { border-bottom: none; }
-        .acc-body li a { display: block; padding: 0.6rem 0.25rem; color: var(--text);
-            text-decoration: none; font-size: 0.92rem; }
-        .acc-body li a:hover { background: var(--light); color: var(--primary-dark); padding-left: 0.6rem; }
-        .acc-body .kind { color: #9ca3af; font-size: 0.78rem; }
-    </style>
 </head>
 <body>
     <div class="header">
