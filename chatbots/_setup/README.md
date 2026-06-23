@@ -1,16 +1,16 @@
 # RetailFlow chatbot setup
 
-How the 7 virtual-staff chatbots were built on the AnythingLLM server (`chat.eduserver.au`) and embedded into this site. Keep this so the bots are reproducible — the live config otherwise exists only on the server.
+How the 7 virtual-staff chatbots were built on the AnythingLLM server (`chat.eduserver.au`) and embedded into this site. Keep this so the bots are reproducible. The live config otherwise exists only on the server.
 
 ## Prerequisites
-- `pip install -U botstash` (≥ 0.3.0 — needed for `.md`/`.html` ingest)
+- `pip install -U botstash` (≥ 0.3.0, needed for `.md`/`.html` ingest)
 - `ANYTHINGLLM_API_KEY` set in the environment; server URL `https://chat.eduserver.au`
 - A `.botstash.env` (in the botstash working dir) with `ANYTHINGLLM_URL` and `ANYTHINGLLM_KEY`
 
 ## The three steps per bot
 1. **Create workspace + upload docs** (botstash):
    `botstash run <staging-folder> --workspace "retailflow-<name>"`
-   — staging-folder holds that bot's docs per the mapping in `../DOC-TO-BOT-MAPPING.md` (relevant docs only; **no red herrings**).
+   The staging-folder holds that bot's docs per the mapping in `../DOC-TO-BOT-MAPPING.md` (relevant docs only; **no red herrings**).
 2. **Set the system prompt** (persona + delivery mode + guardrails): `configure_bot.py` in this folder:
    `python3 configure_bot.py retailflow-<name> ../bots/<name>/prompt.txt`
    This is API-only (updates `openAiPrompt`); it never touches documents.
@@ -28,21 +28,21 @@ How the 7 virtual-staff chatbots were built on the AnythingLLM server (`chat.edu
 | Lisa Nguyen (CCO) | `retailflow-lisa-nguyen` | `be8824b4-c592-422d-96bd-8358253a4603` (70) |
 
 ## Updating a bot
-- **Change the prompt/guardrails:** edit `configure_bot.py` (the `ABSOLUTE` / `GUARDRAILS` / `DELIVERY_MODE` constants are shared by all bots) and re-run step 2 for each slug. Safe to repeat — it only overwrites the system prompt.
-- **Change the documents:** ⚠️ `botstash run` is **not idempotent** — it reuses the workspace but **re-uploads and duplicates the documents**. To update docs cleanly, reset first:
+- **Change the prompt/guardrails:** edit `configure_bot.py` (the `ABSOLUTE` / `GUARDRAILS` / `DELIVERY_MODE` constants are shared by all bots) and re-run step 2 for each slug. Safe to repeat: it only overwrites the system prompt.
+- **Change the documents:** ⚠️ `botstash run` is **not idempotent**: it reuses the workspace but **re-uploads and duplicates the documents**. To update docs cleanly, reset first:
   `botstash extract <folder> --output ./staging` then `botstash embed ./staging --workspace retailflow-<name> --reset`
   (`--reset` clears the workspace before uploading; only the `embed` command has it, not `run`).
 
 ## Guardrails baked into every bot (via configure_bot.py)
-- **Consultant, not the consultant:** bots give input/opinions from their seat but will not do the delivery lead's work or hand over the answer/deliverable — they reflect it back.
-- **Natural redirection:** they'll point you to the right person/function like a real colleague (we deliberately did NOT gag this — it's unrealistic and unenforceable).
+- **Consultant, not the consultant:** bots give input/opinions from their seat but will not do the delivery lead's work or hand over the answer/deliverable. They reflect it back.
+- **Natural redirection:** they'll point you to the right person/function like a real colleague (we deliberately did NOT gag this, since it's unrealistic and unenforceable).
 - **On-task only** (refuse trivia/NSFW), **concise** (busy-exec brevity, voice varies), **don't invent** figures/policies.
 
 ## Retrieval settings
-`configure_bot.py` also sets each workspace to **`similarityThreshold: 0`** (no restriction) and **`topN: 6`**. AnythingLLM's defaults (threshold 0.25, topN 4) are too strict for these knowledge bases — loosely-worded questions (e.g. "what's the first session?") can retrieve **0 chunks** and make the bot wrongly answer "that's not in my material." The course-assistant bot on the companion site uses the same settings.
+`configure_bot.py` also sets each workspace to **`similarityThreshold: 0`** (no restriction) and **`topN: 6`**. AnythingLLM's defaults (threshold 0.25, topN 4) are too strict for these knowledge bases. Loosely-worded questions (e.g. "what's the first session?") can retrieve **0 chunks** and make the bot wrongly answer "that's not in my material." The course-assistant bot on the companion site uses the same settings.
 
 ## Embed cost/abuse settings (UI only)
-The AnythingLLM API on this server **accepts but silently does not persist** embed rate-limit/allowlist updates (tested via `/embed/{uuid}` and `/embed/update/{id}` — both no-ops). So set these in the UI per embed:
+The AnythingLLM API on this server **accepts but silently does not persist** embed rate-limit/allowlist updates (tested via `/embed/{uuid}` and `/embed/update/{id}`, both no-ops). So set these in the UI per embed:
 
 **Settings → Embeddable Chat Widgets → (each embed) → Edit:**
 - **Restrict requests to domains:** `retailflow.eduserver.au` (for the 7 staff bots) / `michael-borck.github.io` (for the course-assistant bot)

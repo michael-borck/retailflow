@@ -1,4 +1,4 @@
-/* RetailFlow internal-document style — shared by all dossier documents.
+/* RetailFlow internal-document style, shared by all dossier documents.
    Matches the site palette. Looks like a clean internal document / intranet page. */
 :root{
   --primary:#2563eb; --primary-dark:#1e40af; --secondary:#10b981; --accent:#f59e0b;

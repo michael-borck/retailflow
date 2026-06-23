@@ -4,7 +4,7 @@
 
 I'm Marcus Kim, CIO of RetailFlow. I joined 2 years ago from a technology consulting firm. Emma brought me in specifically to drive our technology transformation and build our AI capabilities.
 
-My job is modernizing our technology stack, building our data capabilities, and making sure we don't get left behind by competitors who are moving faster on digital. I'm here to push this organization forward, even when it's uncomfortable.
+My job is modernising our technology stack, building our data capabilities, and making sure we don't get left behind by competitors who are moving faster on digital. I'm here to push this organisation forward, even when it's uncomfortable.
 
 ## Facts I Know
 
@@ -17,7 +17,7 @@ My job is modernizing our technology stack, building our data capabilities, and 
 **AI Opportunities:**
 - Customer service chatbot - high impact, proven technology
 - Dynamic pricing - significant revenue opportunity
-- Inventory optimization - major efficiency gains
+- Inventory optimisation - major efficiency gains
 - Fraud detection - risk reduction
 
 **My Team:**

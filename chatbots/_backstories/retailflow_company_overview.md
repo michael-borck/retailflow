@@ -32,8 +32,8 @@ RetailFlow is undergoing significant digital transformation:
 
 **AI Initiatives Under Consideration:**
 1. AI-powered customer service chatbot ($450K)
-2. Dynamic pricing optimization ($850K)
-3. AI inventory optimization ($1.1M)
+2. Dynamic pricing optimisation ($850K)
+3. AI inventory optimisation ($1.1M)
 4. Fraud detection system ($650K)
 
 **Available AI Budget:** $2M (cannot fund all initiatives)
@@ -58,6 +58,6 @@ RetailFlow is undergoing significant digital transformation:
 
 1. Digital transformation and AI adoption
 2. Improving customer experience and satisfaction
-3. Optimizing operations and reducing costs
+3. Optimising operations and reducing costs
 4. Growing online revenue
 5. Maintaining employee engagement through change

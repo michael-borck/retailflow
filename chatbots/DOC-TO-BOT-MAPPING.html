@@ -144,13 +144,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#which-documents-go-into-which-bot" id="toc-which-documents-go-into-which-bot" class="nav-link active" data-scroll-target="#which-documents-go-into-which-bot">Which documents go into which bot</a>
   <ul class="collapse">
   <li><a href="#priority-for-friday" id="toc-priority-for-friday" class="nav-link" data-scroll-target="#priority-for-friday">Priority for Friday</a></li>
-  <li><a href="#priya-sharma-head-of-data-analytics-botspriya_sharma" id="toc-priya-sharma-head-of-data-analytics-botspriya_sharma" class="nav-link" data-scroll-target="#priya-sharma-head-of-data-analytics-botspriya_sharma">Priya Sharma — Head of Data &amp; Analytics <code>bots/priya_sharma/</code></a></li>
-  <li><a href="#marcus-kim-cio-botsmarcus_kim" id="toc-marcus-kim-cio-botsmarcus_kim" class="nav-link" data-scroll-target="#marcus-kim-cio-botsmarcus_kim">Marcus Kim — CIO <code>bots/marcus_kim/</code></a></li>
-  <li><a href="#emma-rodriguez-managing-director-botsemma_rodriguez" id="toc-emma-rodriguez-managing-director-botsemma_rodriguez" class="nav-link" data-scroll-target="#emma-rodriguez-managing-director-botsemma_rodriguez">Emma Rodriguez — Managing Director <code>bots/emma_rodriguez/</code></a></li>
-  <li><a href="#david-chen-cfo-botsdavid_chen" id="toc-david-chen-cfo-botsdavid_chen" class="nav-link" data-scroll-target="#david-chen-cfo-botsdavid_chen">David Chen — CFO <code>bots/david_chen/</code></a></li>
-  <li><a href="#tom-walsh-customer-service-manager-botstom_walsh" id="toc-tom-walsh-customer-service-manager-botstom_walsh" class="nav-link" data-scroll-target="#tom-walsh-customer-service-manager-botstom_walsh">Tom Walsh — Customer Service Manager <code>bots/tom_walsh/</code></a></li>
-  <li><a href="#sarah-thompson-coo-botssarah_thompson-optional" id="toc-sarah-thompson-coo-botssarah_thompson-optional" class="nav-link" data-scroll-target="#sarah-thompson-coo-botssarah_thompson-optional">Sarah Thompson — COO <code>bots/sarah_thompson/</code> <em>(optional)</em></a></li>
-  <li><a href="#lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional" id="toc-lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional" class="nav-link" data-scroll-target="#lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional">Lisa Nguyen — GM Customer Experience <code>bots/lisa_nguyen/</code> <em>(optional)</em></a></li>
+  <li><a href="#priya-sharma-head-of-data-analytics-botspriya_sharma" id="toc-priya-sharma-head-of-data-analytics-botspriya_sharma" class="nav-link" data-scroll-target="#priya-sharma-head-of-data-analytics-botspriya_sharma">Priya Sharma, Head of Data &amp; Analytics <code>bots/priya_sharma/</code></a></li>
+  <li><a href="#marcus-kim-cio-botsmarcus_kim" id="toc-marcus-kim-cio-botsmarcus_kim" class="nav-link" data-scroll-target="#marcus-kim-cio-botsmarcus_kim">Marcus Kim, CIO <code>bots/marcus_kim/</code></a></li>
+  <li><a href="#emma-rodriguez-managing-director-botsemma_rodriguez" id="toc-emma-rodriguez-managing-director-botsemma_rodriguez" class="nav-link" data-scroll-target="#emma-rodriguez-managing-director-botsemma_rodriguez">Emma Rodriguez, Managing Director <code>bots/emma_rodriguez/</code></a></li>
+  <li><a href="#david-chen-cfo-botsdavid_chen" id="toc-david-chen-cfo-botsdavid_chen" class="nav-link" data-scroll-target="#david-chen-cfo-botsdavid_chen">David Chen, CFO <code>bots/david_chen/</code></a></li>
+  <li><a href="#tom-walsh-customer-service-manager-botstom_walsh" id="toc-tom-walsh-customer-service-manager-botstom_walsh" class="nav-link" data-scroll-target="#tom-walsh-customer-service-manager-botstom_walsh">Tom Walsh, Customer Service Manager <code>bots/tom_walsh/</code></a></li>
+  <li><a href="#sarah-thompson-coo-botssarah_thompson-optional" id="toc-sarah-thompson-coo-botssarah_thompson-optional" class="nav-link" data-scroll-target="#sarah-thompson-coo-botssarah_thompson-optional">Sarah Thompson, COO <code>bots/sarah_thompson/</code> <em>(optional)</em></a></li>
+  <li><a href="#lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional" id="toc-lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional" class="nav-link" data-scroll-target="#lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional">Lisa Nguyen, GM Customer Experience <code>bots/lisa_nguyen/</code> <em>(optional)</em></a></li>
   <li><a href="#after-uploading-each-bot" id="toc-after-uploading-each-bot" class="nav-link" data-scroll-target="#after-uploading-each-bot">After uploading each bot</a></li>
   </ul></li>
   </ul>
@@ -167,9 +167,9 @@ ul.task-list li input[type="checkbox"] {
 <p>Paint-by-numbers for tomorrow’s AnythingLLM build. For each bot: the workspace name, the <strong>system prompt</strong> to paste, and the <strong>knowledge documents</strong> to load. Then create the embed and paste it into the bot’s <code>index.qmd</code>.</p>
 <blockquote class="blockquote">
 <p><strong>Upload method.</strong> AnythingLLM ingests <code>.md</code> / <code>.html</code> / <code>.txt</code> natively, so the <strong>simplest path is to upload these files directly in the AnythingLLM UI</strong> (drag-drop into the workspace, then “Save &amp; Embed”). <code>botstash</code> is great for LMS exports but its scanner <strong>skips <code>.md</code>/<code>.html</code></strong> (only pdf/docx/pptx/vtt/qti/imscc), so to use botstash you’d first render these to PDF. For Friday, UI upload is the reliable route.</p>
-<p><strong>System prompt</strong> = the contents of that bot’s <code>bots/&lt;name&gt;/prompt.txt</code> <strong>plus</strong> the DELIVERY MODE line from <code>ANYTHINGLLM_SETUP.md</code>. botstash does <strong>not</strong> set this — paste it in the workspace’s chat settings.</p>
+<p><strong>System prompt</strong> = the contents of that bot’s <code>bots/&lt;name&gt;/prompt.txt</code> <strong>plus</strong> the DELIVERY MODE line from <code>ANYTHINGLLM_SETUP.md</code>. botstash does <strong>not</strong> set this; paste it in the workspace’s chat settings.</p>
 <p><strong>Every bot also gets these two shared docs:</strong> <code>_backstories/retailflow_company_overview.md</code> and <code>_backstories/delivery_scenario_context.md</code>.</p>
-<p><strong>Do NOT upload the red-herring / trap docs to any bot</strong> (the newsletter, the 2024 offsite notes, the 2023 pricing memo, the chatty emails). Those exist for the human document-discernment exercise; giving them to a bot would make it cite stale or irrelevant info. Bots get the <em>accurate</em> docs only — they already “know” the underlying facts from their profile docs.</p>
+<p><strong>Do NOT upload the red-herring / trap docs to any bot</strong> (the newsletter, the 2024 offsite notes, the 2023 pricing memo, the chatty emails). Those exist for the human document-discernment exercise; giving them to a bot would make it cite stale or irrelevant info. Bots get the <em>accurate</em> docs only; they already “know” the underlying facts from their profile docs.</p>
 </blockquote>
 <section id="priority-for-friday" class="level2">
 <h2 class="anchored" data-anchor-id="priority-for-friday">Priority for Friday</h2>
@@ -177,31 +177,31 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 <section id="priya-sharma-head-of-data-analytics-botspriya_sharma" class="level2">
-<h2 class="anchored" data-anchor-id="priya-sharma-head-of-data-analytics-botspriya_sharma">Priya Sharma — Head of Data &amp; Analytics <code>bots/priya_sharma/</code></h2>
-<p>The data-readiness oracle every group interviews in Sprint 1, about <em>their</em> initiative — so she gets all four data profiles. - <code>_backstories/priya_sharma_data_analytics.md</code> - <code>documents/chatbot/cs-data-profile.html</code> - <code>documents/pricing/pricing-data-profile.html</code> - <code>documents/inventory/inventory-data-profile.html</code> - <code>documents/fraud/fraud-data-profile.html</code> - <code>documents/company/it-systems-overview.html</code></p>
+<h2 class="anchored" data-anchor-id="priya-sharma-head-of-data-analytics-botspriya_sharma">Priya Sharma, Head of Data &amp; Analytics <code>bots/priya_sharma/</code></h2>
+<p>The data-readiness oracle every group interviews in Sprint 1, about <em>their</em> initiative, so she gets all four data profiles. - <code>_backstories/priya_sharma_data_analytics.md</code> - <code>documents/chatbot/cs-data-profile.html</code> - <code>documents/pricing/pricing-data-profile.html</code> - <code>documents/inventory/inventory-data-profile.html</code> - <code>documents/fraud/fraud-data-profile.html</code> - <code>documents/company/it-systems-overview.html</code></p>
 </section>
 <section id="marcus-kim-cio-botsmarcus_kim" class="level2">
-<h2 class="anchored" data-anchor-id="marcus-kim-cio-botsmarcus_kim">Marcus Kim — CIO <code>bots/marcus_kim/</code></h2>
+<h2 class="anchored" data-anchor-id="marcus-kim-cio-botsmarcus_kim">Marcus Kim, CIO <code>bots/marcus_kim/</code></h2>
 <p>Tech ambition, legacy systems, vendor/build view across initiatives. - <code>_backstories/marcus_kim_cio.md</code> - <code>documents/company/it-systems-overview.html</code> - <code>documents/inventory/legacy-systems-note.html</code> - All four board memos: <code>documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html</code> - Vendor proposals: <code>documents/{chatbot,pricing,fraud}/vendor-proposal-*.html</code></p>
 </section>
 <section id="emma-rodriguez-managing-director-botsemma_rodriguez" class="level2">
-<h2 class="anchored" data-anchor-id="emma-rodriguez-managing-director-botsemma_rodriguez">Emma Rodriguez — Managing Director <code>bots/emma_rodriguez/</code></h2>
+<h2 class="anchored" data-anchor-id="emma-rodriguez-managing-director-botsemma_rodriguez">Emma Rodriguez, Managing Director <code>bots/emma_rodriguez/</code></h2>
 <p>Board promise, scope, what was committed. - <code>_backstories/emma_rodriguez_ceo.md</code> - All four board memos: <code>documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html</code> - <code>documents/company/company-fact-sheet.html</code> - <code>documents/company/ai-principles-draft.html</code></p>
 </section>
 <section id="david-chen-cfo-botsdavid_chen" class="level2">
-<h2 class="anchored" data-anchor-id="david-chen-cfo-botsdavid_chen">David Chen — CFO <code>bots/david_chen/</code></h2>
+<h2 class="anchored" data-anchor-id="david-chen-cfo-botsdavid_chen">David Chen, CFO <code>bots/david_chen/</code></h2>
 <p>Budgets, costs, ROI, go/no-go criteria. - <code>_backstories/david_chen_cfo.md</code> - All four board memos: <code>documents/{chatbot,pricing,inventory,fraud}/board-memo-*.html</code> - Vendor proposals (for costs): <code>documents/{chatbot,pricing,fraud}/vendor-proposal-*.html</code> - <code>documents/company/ai-principles-draft.html</code></p>
 </section>
 <section id="tom-walsh-customer-service-manager-botstom_walsh" class="level2">
-<h2 class="anchored" data-anchor-id="tom-walsh-customer-service-manager-botstom_walsh">Tom Walsh — Customer Service Manager <code>bots/tom_walsh/</code></h2>
+<h2 class="anchored" data-anchor-id="tom-walsh-customer-service-manager-botstom_walsh">Tom Walsh, Customer Service Manager <code>bots/tom_walsh/</code></h2>
 <p>Frontline reality; chatbot-focused (Sprint 2 inserts land on his team). - <code>_backstories/tom_walsh_cs_manager.md</code> - <code>documents/chatbot/board-memo-chatbot.html</code> - <code>documents/chatbot/cs-data-profile.html</code> - <code>documents/chatbot/returns-policy.html</code> - <code>documents/company/org-chart.html</code></p>
 </section>
 <section id="sarah-thompson-coo-botssarah_thompson-optional" class="level2">
-<h2 class="anchored" data-anchor-id="sarah-thompson-coo-botssarah_thompson-optional">Sarah Thompson — COO <code>bots/sarah_thompson/</code> <em>(optional)</em></h2>
+<h2 class="anchored" data-anchor-id="sarah-thompson-coo-botssarah_thompson-optional">Sarah Thompson, COO <code>bots/sarah_thompson/</code> <em>(optional)</em></h2>
 <p>Operational reality, especially inventory/store ops. - <code>_backstories/sarah_thompson_coo.md</code> - <code>documents/inventory/board-memo-inventory.html</code> - <code>documents/inventory/stock-replenishment-policy.html</code> - <code>documents/company/company-fact-sheet.html</code></p>
 </section>
 <section id="lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional" class="level2">
-<h2 class="anchored" data-anchor-id="lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional">Lisa Nguyen — GM Customer Experience <code>bots/lisa_nguyen/</code> <em>(optional)</em></h2>
+<h2 class="anchored" data-anchor-id="lisa-nguyen-gm-customer-experience-botslisa_nguyen-optional">Lisa Nguyen, GM Customer Experience <code>bots/lisa_nguyen/</code> <em>(optional)</em></h2>
 <p>Customer experience lens. - <code>_backstories/lisa_nguyen_cco.md</code> - <code>documents/chatbot/returns-policy.html</code> - <code>documents/company/company-fact-sheet.html</code></p>
 <hr>
 </section>
@@ -220,9 +220,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
-<!-- Educational disclaimer — RetailFlow is a fictional company. Injected on every page. -->
+<!-- Educational disclaimer: RetailFlow is a fictional company. Injected on every page. -->
 <div id="rf-disclaimer" role="note" aria-label="Disclaimer" style="position:fixed;left:14px;bottom:14px;z-index:99999;max-width:258px;background:#111827;color:#fff;font:500 12px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:9px 12px 9px 11px;border-radius:9px;box-shadow:0 6px 18px rgba(0,0,0,.28);border-left:3px solid #f59e0b;">
-  <strong>Fictional company.</strong> RetailFlow is a teaching scenario for Curtin University executive education — not a real business.
+  <strong>Fictional company.</strong> RetailFlow is a teaching scenario for Curtin University executive education, not a real business.
 </div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

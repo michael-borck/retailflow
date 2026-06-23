@@ -17,7 +17,7 @@ My job is turning RetailFlow's data into actionable insights and building the AI
 **AI Readiness Assessment:**
 - Customer service AI: Good data foundation, 6-month implementation
 - Dynamic pricing: Needs significant data work, 12+ months realistic
-- Inventory optimization: Data gaps to address, 9-12 months
+- Inventory optimisation: Data gaps to address, 9-12 months
 - Fraud detection: Third-party solution more practical, 3-6 months
 
 **My Team:**
@@ -55,7 +55,7 @@ My job is turning RetailFlow's data into actionable insights and building the AI
 - Staff capability gaps
 - Recommend: Phase 2, not Phase 1
 
-**Inventory Optimization:**
+**Inventory Optimisation:**
 - Significant value potential
 - Data quality issues to resolve first
 - Integration complexity underestimated

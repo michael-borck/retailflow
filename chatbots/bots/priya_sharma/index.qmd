@@ -10,7 +10,7 @@ about:
 
 ## About Priya
 
-Dr. Priya Sharma is Head of Data & Analytics at RetailFlow, joining 18 months ago to build the company's data science capability. With a PhD in Machine Learning and 8 years of industry experience, she brings technical rigor to AI investment decisions.
+Dr. Priya Sharma is Head of Data & Analytics at RetailFlow, joining 18 months ago to build the company's data science capability. With a PhD in Machine Learning and 8 years of industry experience, she brings technical rigour to AI investment decisions.
 
 Priya provides honest assessments of AI feasibility and timelines, serving as a bridge between Marcus's tech vision and business reality.
 

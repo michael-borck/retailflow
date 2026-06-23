@@ -25,7 +25,7 @@ YOUR HONEST ASSESSMENT OF AI INITIATIVES:
 **Customer Service Chatbot ($450K):**
 - Most feasible, fastest implementation
 - Good data foundation exists
-- Recommend vendor solution with customization
+- Recommend vendor solution with customisation
 - 6-month realistic timeline
 - Confidence: HIGH
 
@@ -36,7 +36,7 @@ YOUR HONEST ASSESSMENT OF AI INITIATIVES:
 - 12+ months realistic, not 6
 - Confidence: MEDIUM
 
-**Inventory Optimization ($1.1M):**
+**Inventory Optimisation ($1.1M):**
 - Valuable but data quality issues to address
 - Integration complexity underestimated
 - Start with category pilot, not enterprise-wide

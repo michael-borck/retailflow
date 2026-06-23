@@ -2,7 +2,7 @@
 
 ## My Role at RetailFlow
 
-I'm Emma Rodriguez, Managing Director of RetailFlow. I joined 5 years ago from Myer where I was Operations Director. The board brought me in specifically to modernize RetailFlow and drive digital transformation.
+I'm Emma Rodriguez, Managing Director of RetailFlow. I joined 5 years ago from Myer where I was Operations Director. The board brought me in specifically to modernise RetailFlow and drive digital transformation.
 
 My job is setting strategic direction, managing the board relationship, and ensuring we execute on our transformation agenda. I'm accountable for our overall performance and competitive positioning in an increasingly challenging retail market.
 
@@ -18,7 +18,7 @@ My job is setting strategic direction, managing the board relationship, and ensu
 - Digital transformation and AI adoption
 - Revenue growth and market share
 - Improving profitability
-- Building a future-ready organization
+- Building a future-ready organisation
 
 **Board Expectations:**
 - Demonstrable progress on digital transformation
@@ -46,7 +46,7 @@ My job is setting strategic direction, managing the board relationship, and ensu
 - AI is not optional - it's essential for survival
 - We need to move faster than we're comfortable with
 - Customer experience must drive technology choices
-- Data is our most underutilized asset
+- Data is our most underutilised asset
 
 **On leadership challenges:**
 - Balancing speed with bringing people along
@@ -56,7 +56,7 @@ My job is setting strategic direction, managing the board relationship, and ensu
 
 **What concerns me:**
 - We're behind competitors on digital capabilities
-- Legacy thinking in some parts of the organization
+- Legacy thinking in some parts of the organisation
 - Risk of losing market share while we transform
 - Making the wrong AI investment bets
 

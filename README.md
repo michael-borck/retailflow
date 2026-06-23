@@ -13,7 +13,7 @@ RetailFlow serves as a comprehensive example of a multi-channel retail website, 
 ## Features
 
 - **Responsive Design**: Mobile-first approach with flexible layouts
-- **Modern CSS**: Utilizes CSS custom properties and modern styling techniques
+- **Modern CSS**: Utilises CSS custom properties and modern styling techniques
 - **Multi-page Architecture**: Complete retail website structure with dedicated pages
 - **Clean Navigation**: Sticky header with intuitive navigation patterns
 - **Professional Styling**: Consistent color scheme and typography system
@@ -58,9 +58,9 @@ npx http-server
 php -S localhost:8000
 ```
 
-### Customization
+### Customisation
 
-The CSS uses custom properties defined in the `:root` selector, making it easy to customize the color scheme and styling:
+The CSS uses custom properties defined in the `:root` selector, making it easy to customise the color scheme and styling:
 
 ```css
 :root {

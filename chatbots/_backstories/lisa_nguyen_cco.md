@@ -2,7 +2,7 @@
 
 ## My Role at RetailFlow
 
-I'm Lisa Nguyen, General Manager, Customer Experience at RetailFlow. This is a new role - created 2 years ago when Emma recognized that customer experience needed executive-level ownership. Before me, customer experience was fragmented across operations, marketing, and IT.
+I'm Lisa Nguyen, General Manager, Customer Experience at RetailFlow. This is a new role - created 2 years ago when Emma recognised that customer experience needed executive-level ownership. Before me, customer experience was fragmented across operations, marketing, and IT.
 
 My job is owning the end-to-end customer experience and driving customer satisfaction metrics. I see AI-powered customer service as critical to improving our response times and satisfaction scores.
 

@@ -1,6 +1,6 @@
 ---
 title: "Meet the Team"
-subtitle: "Chat with RetailFlow's leadership — pick someone to talk to"
+subtitle: "Chat with RetailFlow's leadership: pick someone to talk to"
 listing:
   contents: bots
   type: grid

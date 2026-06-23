@@ -17,7 +17,7 @@ Marcus is passionate about AI and frustrated by legacy systems. He believes Reta
 ## Technology Focus
 
 - AI adoption and implementation
-- System modernization
+- System modernisation
 - Data and analytics capabilities
 - Digital transformation speed
 

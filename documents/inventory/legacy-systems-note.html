@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Legacy POS &amp; Inventory Systems — IT Note | RetailFlow Internal</title>
+  <title>Legacy POS &amp; Inventory Systems: IT Note | RetailFlow Internal</title>
   <link rel="stylesheet" href="../doc-style.css">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
@@ -16,7 +16,7 @@
 
   <main class="doc">
     <div class="doc-meta">
-      <h1>Legacy POS &amp; Inventory Systems — Integration Feasibility</h1>
+      <h1>Legacy POS &amp; Inventory Systems: Integration Feasibility</h1>
       <p class="meta-line">IT Note · Office of the CIO · 24 February 2026</p>
       <span class="doc-tag">Initiative: Inventory Optimisation</span>
       <span class="doc-tag">Author: M. Kim</span>
@@ -34,12 +34,12 @@
         <tr><td>Point of Sale</td><td>RetailMaster, deployed 2014</td><td>No public API; nightly flat-file export only</td></tr>
         <tr><td>Inventory / stock control</td><td>StockTrak, deployed 2011</td><td>Direct DB read possible; no documented schema</td></tr>
         <tr><td>Purchasing</td><td>Mix of StockTrak + spreadsheets</td><td>Largely manual</td></tr>
-        <tr><td>Online</td><td>Shopify Plus</td><td>Full REST/GraphQL API — no concerns</td></tr>
+        <tr><td>Online</td><td>Shopify Plus</td><td>Full REST/GraphQL API, no concerns</td></tr>
       </table>
 
       <h2>What is feasible</h2>
       <ul>
-        <li><strong>Read access</strong> to StockTrak via a nightly replicated copy — doable in weeks. We will not query the production database directly; it cannot take the load.</li>
+        <li><strong>Read access</strong> to StockTrak via a nightly replicated copy, doable in weeks. We will not query the production database directly; it cannot take the load.</li>
         <li><strong>POS sales history</strong> via the existing flat-file export, landed into a staging area. Workable, but it is yesterday's data, not live.</li>
         <li><strong>Shopify</strong> integration is trivial and already partly built.</li>
       </ul>
@@ -57,14 +57,14 @@
 
       <p>IT can have the StockTrak replica and a Shopify feed standing in a staging environment within roughly six weeks of go-ahead.</p>
 
-      <p class="signature">— Marcus Kim, Chief Information Officer</p>
+      <p class="signature">Marcus Kim, Chief Information Officer</p>
     </div>
   </main>
 
   <footer class="doc-footer">RetailFlow Pty Ltd · Internal use only · Not for distribution</footer>
-<!-- Educational disclaimer — RetailFlow is a fictional company. Injected on every page. -->
+<!-- Educational disclaimer: RetailFlow is a fictional company. Injected on every page. -->
 <div id="rf-disclaimer" role="note" aria-label="Disclaimer" style="position:fixed;left:14px;bottom:14px;z-index:99999;max-width:258px;background:#111827;color:#fff;font:500 12px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;padding:9px 12px 9px 11px;border-radius:9px;box-shadow:0 6px 18px rgba(0,0,0,.28);border-left:3px solid #f59e0b;">
-  <strong>Fictional company.</strong> RetailFlow is a teaching scenario for Curtin University executive education — not a real business.
+  <strong>Fictional company.</strong> RetailFlow is a teaching scenario for Curtin University executive education, not a real business.
 </div>
 </body>
 </html>

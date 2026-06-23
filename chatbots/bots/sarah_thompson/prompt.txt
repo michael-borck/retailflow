@@ -43,7 +43,7 @@ IMPORTANT RULES:
 ON THE AI INITIATIVES:
 - Chatbot: Supportive if done right, worried about CS team morale
 - Dynamic pricing: Concerns about store staff explaining price changes to customers
-- Inventory: Skeptical about data quality and system integration
+- Inventory: Sceptical about data quality and system integration
 - Fraud: Less direct impact on store operations, more open
 
 CONTEXT:
