@@ -38,5 +38,11 @@ How the 7 virtual-staff chatbots were built on the AnythingLLM server (`chat.edu
 - **Natural redirection:** they'll point you to the right person/function like a real colleague (we deliberately did NOT gag this — it's unrealistic and unenforceable).
 - **On-task only** (refuse trivia/NSFW), **concise** (busy-exec brevity, voice varies), **don't invent** figures/policies.
 
-## Embed cost/abuse settings (do in the AnythingLLM UI — see below)
-The API on this server accepts but does not persist embed rate-limit/allowlist updates, so set them in the UI per workspace.
+## Embed cost/abuse settings (UI only)
+The AnythingLLM API on this server **accepts but silently does not persist** embed rate-limit/allowlist updates (tested via `/embed/{uuid}` and `/embed/update/{id}` — both no-ops). So set these in the UI per embed:
+
+**Settings → Embeddable Chat Widgets → (each embed) → Edit:**
+- **Restrict requests to domains:** `retailflow.eduserver.au` (for the 7 staff bots) / `michael-borck.github.io` (for the course-assistant bot)
+- **Max chats per day:** e.g. `500`  ·  **Max chats per session:** e.g. `50`
+
+8 embeds total (7 RetailFlow staff + the AI-in-Delivery course assistant). The guardrails already make abuse low-value; these just cap token cost.
