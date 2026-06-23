@@ -1,57 +1,83 @@
-/* RetailFlow Chatbots Styling */
+/* RetailFlow Chatbots Styling — aligned with the warm-neutral storefront theme.
+   These Quarto pages use Bootstrap; this file re-skins the navbar + cards
+   so the team pages feel like part of the same site as the storefront. */
 :root {
-  --rf-primary: #2563eb;
-  --rf-primary-dark: #1e40af;
-  --rf-secondary: #10b981;
-  --rf-accent: #f59e0b;
-  --rf-dark: #1f2937;
-  --rf-light: #f3f4f6;
+  --rf-bg:#FAF6EF;
+  --rf-soft:#F3ECDF;
+  --rf-surface:#FFFFFF;
+  --rf-ink:#241F1A;
+  --rf-body:#5C544C;
+  --rf-muted:#8C8378;
+  --rf-line:#EAE1D3;
+  --rf-accent:#C25C3A;
+  --rf-accent-dark:#A2492B;
+  --rf-accent-soft:#F6E4DA;
 }
 
+body {
+  background:var(--rf-bg);
+  color:var(--rf-body);
+}
+
+/* Navbar → warm charcoal to match the site */
 .navbar {
-  background-color: var(--rf-primary) !important;
+  background-color:var(--rf-ink) !important;
+  border-bottom:1px solid #000;
 }
-
-.navbar-brand {
-  font-weight: 700;
+.navbar-brand, .navbar-brand .navbar-title,
+.navbar-nav .nav-link, .navbar-nav .menu-text {
+  color:#fff !important;
 }
+.navbar-brand { font-weight:700; letter-spacing:-.01em; }
+.navbar-nav .nav-link.active { color:#E8A56F !important; }
+.navbar-nav .nav-link:hover { color:#fff; opacity:.85; }
+.navbar-toggler { border-color:rgba(255,255,255,.25); }
 
-h1, h2, h3 {
-  color: var(--rf-dark);
-}
+/* Headings */
+h1, h2, h3 { color:var(--rf-ink); }
+h1.title, .title { letter-spacing:-.02em; font-weight:800; }
+.subtitle.lead { color:var(--rf-muted); }
 
+/* Cards (team grid) */
 .card {
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border:1px solid var(--rf-line);
+  border-radius:18px;
+  box-shadow:0 1px 2px rgba(70,45,20,.04), 0 10px 30px rgba(70,45,20,.07);
+  transition:transform .2s ease, box-shadow .2s ease;
+  background:var(--rf-surface);
 }
-
 .card:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  transform: translateY(-4px);
+  transform:translateY(-6px);
+  box-shadow:0 24px 60px rgba(70,45,20,.16);
 }
-
-/* Team grid styling */
+.quarto-grid-item .card-title { color:var(--rf-ink) !important; font-weight:700; }
+.quarto-grid-item .card-subtitle { color:var(--rf-accent-dark) !important; }
 .quarto-listing-default .listing-image {
-  border-radius: 50%;
+  border-top-left-radius:18px; border-top-right-radius:18px;
 }
 
-/* Callout styling */
-.callout-note {
-  border-left-color: var(--rf-primary);
-}
+/* Callouts */
+.callout { border-radius:14px; }
+.callout-note { border-left-color:var(--rf-accent); background:var(--rf-accent-soft); }
+.callout-warning { border-left-color:#C77A2E; }
+.callout-note .callout-title-container { color:var(--rf-accent-dark); }
 
-.callout-warning {
-  border-left-color: var(--rf-accent);
-}
-
-/* Button styling */
+/* Links + buttons */
+a { color:var(--rf-accent-dark); }
 .btn-primary {
-  background-color: var(--rf-primary);
-  border-color: var(--rf-primary);
+  background-color:var(--rf-ink);
+  border-color:var(--rf-ink);
+}
+.btn-primary:hover {
+  background-color:#000;
+  border-color:#000;
 }
 
-.btn-primary:hover {
-  background-color: var(--rf-primary-dark);
-  border-color: var(--rf-primary-dark);
+/* Educational disclaimer on Quarto pages — match the storefront badge */
+#rf-disclaimer {
+  left:auto !important; right:14px !important; bottom:14px !important;
+  max-width:240px !important; z-index:150 !important;
+  background:rgba(36,31,26,.92) !important; color:#fff !important;
+  border-left:3px solid var(--rf-accent) !important;
+  border-radius:12px !important;
 }
