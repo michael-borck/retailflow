@@ -37,10 +37,14 @@
         <div class="container">
             <h1>Shop RetailFlow</h1>
             <p style="font-size: 1.1rem; color: var(--text); margin-bottom: 2rem;">Browse our curated collection of fashion and homewares.</p>
+            <div class="shop-tabs" role="tablist" aria-label="Product categories">
+                <button class="shop-tab active" type="button" id="tab-fashion" role="tab" aria-selected="true" aria-controls="fashion" data-tab="fashion">Women&rsquo;s Fashion</button>
+                <button class="shop-tab" type="button" id="tab-mens" role="tab" aria-selected="false" aria-controls="mens" data-tab="mens">Men&rsquo;s Fashion</button>
+                <button class="shop-tab" type="button" id="tab-homewares" role="tab" aria-selected="false" aria-controls="homewares" data-tab="homewares">Homewares</button>
+            </div>
 
             <!-- Women's Fashion -->
-            <section class="section" id="fashion">
-                <h2>👗 Women's Fashion</h2>
+            <section class="section shop-panel active" id="fashion" role="tabpanel" aria-labelledby="tab-fashion" data-tab="fashion">
                 <p style="margin-bottom: 1.5rem;">Clothing, accessories, and footwear for every style.</p>
                 <div class="products">
                     <div class="product">
@@ -89,8 +93,7 @@
             </section>
 
             <!-- Men's Fashion -->
-            <section class="section">
-                <h2>👔 Men's Fashion</h2>
+            <section class="section shop-panel" id="mens" role="tabpanel" aria-labelledby="tab-mens" data-tab="mens">
                 <p style="margin-bottom: 1.5rem;">Shirts, trousers, and accessories for casual and business wear.</p>
                 <div class="products">
                     <div class="product">
@@ -139,8 +142,7 @@
             </section>
 
             <!-- Homewares -->
-            <section class="section" id="homewares">
-                <h2>🏠 Homewares</h2>
+            <section class="section shop-panel" id="homewares" role="tabpanel" aria-labelledby="tab-homewares" data-tab="homewares">
                 <p style="margin-bottom: 1.5rem;">Contemporary furniture and décor for modern living.</p>
                 <div class="products">
                     <div class="product">
@@ -250,5 +252,33 @@
   <strong>Fictional company.</strong> RetailFlow is a teaching scenario for Curtin University executive education, not a real business.
 </div>
 <script src="nav.js" defer></script>
+<script>
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.shop-tab'));
+  if(!tabs.length) return;
+  var panels=[].slice.call(document.querySelectorAll('.shop-panel'));
+  function activate(id,focus){
+    tabs.forEach(function(t){
+      var on=t.dataset.tab===id;
+      t.classList.toggle('active',on);
+      t.setAttribute('aria-selected',on?'true':'false');
+      if(on&&focus){t.focus();}
+    });
+    panels.forEach(function(p){p.classList.toggle('active',p.dataset.tab===id);});
+    if(history.replaceState){history.replaceState(null,'','#'+id);}
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){activate(t.dataset.tab);});
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight'){n=tabs[(i+1)%tabs.length];}
+      else if(e.key==='ArrowLeft'){n=tabs[(i-1+tabs.length)%tabs.length];}
+      if(n){e.preventDefault();activate(n.dataset.tab,true);}
+    });
+  });
+  var h=(location.hash||'').replace('#','');
+  activate(h&&document.querySelector('.shop-panel[data-tab="'+h+'"]')?h:tabs[0].dataset.tab);
+})();
+</script>
 </body>
 </html>

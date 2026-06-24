@@ -263,6 +263,15 @@ main > .section:first-child{ padding-top:1rem; }
 .product-name{ font-weight:600; color:var(--rf-ink); margin-bottom:.3rem; }
 .product-price{ color:var(--rf-accent-dark); font-weight:700; font-size:1.1rem; }
 @media (max-width:768px){ .products{ grid-template-columns:repeat(2,1fr); } }
+/* Shop category tabs */
+.shop-tabs{ display:flex; gap:.2rem; flex-wrap:wrap; border-bottom:1px solid var(--rf-line); margin:0 0 .5rem; }
+.shop-tab{ appearance:none; background:none; border:none; cursor:pointer; font-family:inherit; font-weight:600; font-size:.98rem; color:var(--rf-muted); padding:.9rem 1.25rem; border-bottom:3px solid transparent; margin-bottom:-1px; transition:color .18s, border-color .18s; }
+.shop-tab:hover{ color:var(--rf-ink); }
+.shop-tab.active{ color:var(--rf-ink); border-bottom-color:var(--rf-accent); }
+.shop-tab:focus-visible{ outline:2px solid var(--rf-accent); outline-offset:2px; }
+.shop-panel{ display:none; padding-top:1.5rem; background:transparent !important; }
+.shop-panel.active{ display:block; }
+@media (max-width:600px){ .shop-tab{ padding:.75rem .85rem; font-size:.92rem; } }
 
 /* ---------------------------------------------------------------------
    Stats / metrics
