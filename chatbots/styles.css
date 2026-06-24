@@ -75,7 +75,7 @@ a { color:var(--rf-accent-dark); }
 
 /* Educational disclaimer on Quarto pages — match the storefront badge */
 #rf-disclaimer {
-  left:auto !important; right:14px !important; bottom:14px !important;
+  left:14px !important; right:auto !important; bottom:14px !important;
   max-width:240px !important; z-index:150 !important;
   background:rgba(36,31,26,.92) !important; color:#fff !important;
   border-left:3px solid var(--rf-accent) !important;

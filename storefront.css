@@ -443,7 +443,7 @@ footer a:hover{ color:#fff; }
    Educational disclaimer badge (restyled to sit less aggressively)
    --------------------------------------------------------------------- */
 #rf-disclaimer{
-  left:auto !important; right:14px !important; bottom:14px !important;
+  left:14px !important; right:auto !important; bottom:14px !important;
   max-width:240px !important; z-index:150 !important;
   background:rgba(36,31,26,.92) !important; color:#fff !important;
   font:500 11px/1.5 var(--rf-font) !important;
