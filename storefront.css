@@ -320,13 +320,20 @@ main > .section:first-child{ padding-top:1rem; }
 /* ---------------------------------------------------------------------
    FAQ
    --------------------------------------------------------------------- */
-.faq{ display:grid; gap:.8rem; }
-.faq-item{
-  background:var(--rf-surface); border:1px solid var(--rf-line); border-radius:var(--rf-radius);
-  padding:1.3rem 1.5rem; border-left:4px solid var(--rf-accent); margin-bottom:0;
-}
-.faq-item h4{ color:var(--rf-ink); cursor:pointer; font-weight:700; margin-bottom:.5rem; font-size:1.05rem; }
-.faq-item p{ color:var(--rf-body); margin:0; }
+.faq{ display:grid; gap:.7rem; }
+.faq-item{ background:var(--rf-surface); border:1px solid var(--rf-line); border-left:4px solid var(--rf-accent); border-radius:var(--rf-radius); margin-bottom:0; }
+.faq-item > summary{ cursor:pointer; padding:1.05rem 1.4rem; font-weight:700; color:var(--rf-ink); font-size:1.02rem; list-style:none; display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.faq-item > summary::-webkit-details-marker{ display:none; }
+.faq-item > summary::after{ content:"+"; color:var(--rf-accent); font-size:1.4rem; font-weight:600; line-height:1; }
+.faq-item[open] > summary::after{ content:"\2212"; }
+.faq-item[open] > summary{ border-bottom:1px solid var(--rf-line); }
+.faq-item > p{ padding:1rem 1.4rem 1.2rem; margin:0; color:var(--rf-body); }
+/* Support jump-nav (sticky under the header) */
+.jump-nav{ position:sticky; top:77px; z-index:150; display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; background:var(--rf-bg); padding:.7rem 0; margin:0 0 .5rem; border-bottom:1px solid var(--rf-line); }
+.jump-nav a{ display:inline-block; padding:.45rem .95rem; border-radius:999px; background:var(--rf-surface); border:1px solid var(--rf-line); color:var(--rf-body); font-size:.88rem; font-weight:600; text-decoration:none; transition:background .18s, color .18s, border-color .18s; }
+.jump-nav a:hover{ background:var(--rf-ink); color:#fff; border-color:var(--rf-ink); }
+#help,#track,#performance,#faq{ scroll-margin-top:140px; }
+@media (max-width:600px){ .jump-nav{ top:70px; } .jump-nav a{ padding:.4rem .8rem; font-size:.82rem; } }
 
 /* ---------------------------------------------------------------------
    Modal (customer-service)
