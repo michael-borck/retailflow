@@ -11,7 +11,7 @@
     var panels = [].slice.call(scope.querySelectorAll(':scope > .rf-panel'));
     if (!tabs.length) return;
 
-    function activate(id, focus) {
+    function activate(id, focus, updateHash) {
       tabs.forEach(function (t) {
         var on = t.dataset.tab === id;
         t.classList.toggle('active', on);
@@ -19,16 +19,16 @@
         if (on && focus) t.focus();
       });
       panels.forEach(function (p) { p.classList.toggle('active', p.dataset.tab === id); });
-      if (history.replaceState) history.replaceState(null, '', '#' + id);
+      if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
     }
 
     tabs.forEach(function (t, i) {
-      t.addEventListener('click', function () { activate(t.dataset.tab); });
+      t.addEventListener('click', function () { activate(t.dataset.tab, false, true); });
       t.addEventListener('keydown', function (e) {
         var n = null;
         if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
         else if (e.key === 'ArrowLeft') n = tabs[(i - 1 + tabs.length) % tabs.length];
-        if (n) { e.preventDefault(); activate(n.dataset.tab, true); }
+        if (n) { e.preventDefault(); activate(n.dataset.tab, true, true); }
       });
     });
 
